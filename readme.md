@@ -61,7 +61,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 ###CSS
 - Regular style.css with all Genesis Framework and placeholders to start new project
 - 2 x IE styles in CSS directory, one targets IE8 and lower, the other IE9 and lower
-- 2 CSS min breakpoints are used min 800px which does most of the desktop layout and then cosmetics in min 1200px.
+- 3 CSS min breakpoints are used min 960px which does most of the desktop layout and then cosmetics in min 800px and min 1200px.
 
 ###WooCommerce
 - WooCommerce style sheet set to load before main style sheet
