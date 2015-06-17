@@ -74,11 +74,10 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - 'Read More' link is enabled on post excerpts
 - Comments header changed to 'Leave a Comment'
 - HTML Tags and Attributes is removed from comments
-- Facebook HTML5 function and action are declared in functions.php but commented out
 - The font 'Open Sans' is enqueued from Google Fonts in functions.php
 - Author name removed in Post Meta for posts
 
-Download the zip rename the theme '**genesischild**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
+Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 
 ![Genesis Child Theme](http://wpbeaches.com/images/genesischild-mobile-first.png)
 
