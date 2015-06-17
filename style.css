@@ -1407,7 +1407,7 @@ a.more-link:hover {
 /
 /These colors where used to visualise the various widget areas - they are commented out by default
 ------------------------------------------------------------------------------------------------------------------------*/
-.preheadercontainer {background-color:aquamarine;}
+/*.preheadercontainer {background-color:aquamarine;}
 .preheaderleft {background-color:aliceblue;}
 .preheaderright {background-color:antiquewhite;}
 
@@ -1422,7 +1422,7 @@ a.more-link:hover {
 
 .homeleft {background-color: aquamarine;}
 .homemiddle{background-color: cadetblue; }
-.homeright {background-color: indianred; }
+.homeright {background-color: indianred; }*/
 
 .site-inner {padding-top:10px;}
 
