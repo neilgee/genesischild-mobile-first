@@ -1220,6 +1220,7 @@ li.comment {
 	background-color: #333;
 	clear: both;
 	padding-top: 40px;
+	text-align: center;
 }
 
 .footer-widgets,
@@ -1863,6 +1864,10 @@ a.more-link:hover {
 
 	.footer-widgets-3 {
 		float: right;
+	}
+
+	.footer-widgets {
+		text-align: left;
 	}
 
 }

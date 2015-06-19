@@ -79,7 +79,7 @@ function genesischild_theme_setup() {
 
 	//Image sizes
 
-	add_image_size( 'blog-feature', 380, 380, true );
+	//add_image_size( 'blog-feature', 380, 380, true );
 
 }
 
