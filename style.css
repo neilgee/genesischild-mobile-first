@@ -1,6 +1,6 @@
 /*
 Theme Name: genesischild-mobile-first
-Description: GenesisChild is a vanilla base starter theme created for Genesis Framework
+Description: GenesisChild Mobile First is a vanilla base starter theme created for Genesis Framework
 Author: Neil Gee
 Author URI: http://www.wpbeaches.com/
 Version: 2.1.2
@@ -695,9 +695,6 @@ img.alignright,
 
 .entry-content p.wp-caption-text {
 	margin-bottom: 0;
-}
-
-.sticky {
 }
 
 

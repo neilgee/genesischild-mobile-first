@@ -96,20 +96,16 @@ function wpb_remove_some_widgets(){
 function genesischild_scripts_styles() {
 	wp_enqueue_script ( 'respond' , get_stylesheet_directory_uri() . '/js/respond.min.js', array(), '1', true );
 	wp_enqueue_style ( 'googlefonts' , '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800', '', '2', 'all' );
-	wp_enqueue_style ( 'fontawesome' , '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', '' , '4.3.0', 'all' );
-	wp_enqueue_script ( 'modaljs' , get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.3.4', true );
+	wp_enqueue_style ( 'fontawesome' , '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', '' , '4.4.0', 'all' );
 
 	//wp_enqueue_style( 'dashicons' ); //Uncomment if DashIcons required in front end
 }
 
 //IE Conditional Styles - gotta load last
 function genesischild_ie_styles() {
-	wp_register_style( 'ie8', get_stylesheet_directory_uri() . '/css/ie8.css' );//target IE8 and Lower
-	$GLOBALS['wp_styles']->add_data( 'ie8', 'conditional', 'lte IE 8' );
 	wp_register_style( 'ieall', get_stylesheet_directory_uri() . '/css/ieall.css' );//target IE9 and lower
 	$GLOBALS['wp_styles']->add_data( 'ieall', 'conditional', 'IE' );
 
-	wp_enqueue_style( 'ie8' );
 	wp_enqueue_style( 'ieall' );
 }
 
