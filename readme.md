@@ -7,12 +7,12 @@ This is a basic starter **Genesis Child Theme** to be used with the **Genesis Fr
 It has a number of widgets areas.
 
 ###Widgetised Areas
-- The theme contains the following widgets
+- The theme contains the following widgetised areas
 * Pre-Header Left
-* Pre-Header Right widgetised areas
+* Pre-Header Right 
 * Header Right
 * Hero - Home Page only *front-page.php*
-* Optin *front-page.php*
+* Optin - Home Page only *front-page.php*
 * Home Left - Home Page only *front-page.php*
 * Home Middle - Home Page only *front-page.php*
 * Home Right - Home Page only *front-page.php*
@@ -60,8 +60,8 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 
 ###CSS
 - Regular style.css with all Genesis Framework and placeholders to start new project
-- 2 x IE styles in CSS directory, one targets IE8 and lower, the other IE9 and lower
-- 3 CSS min breakpoints are used min 960px which does most of the desktop layout and then cosmetics in min 800px and min 1200px.
+- 1 x IE styles in CSS directory for IE9 and lower
+- 2 CSS min breakpoints are used min 768px which does ipad + desktop layout and then wider at min 1200px.
 
 ###WooCommerce
 - WooCommerce style sheet set to load before main style sheet
