@@ -18,16 +18,16 @@ function genesischild_theme_setup() {
 	add_theme_support( 'genesis-responsive-viewport' );
 	add_theme_support( 'genesis-footer-widgets', 3 );
 	add_theme_support( 'custom-background' );
+
+	remove_action( 'wp_head', 'genesis_custom_header_style');
 	add_theme_support( 'custom-header', array(
-		'flex-width'      => true,
-		'width'           => 400,
-		'flex-height'     => true,
-		'height'          => 150,
-		'header-selector' => '.header-image .site-title > a',
-		'header-text'     => false,
+		'width'            => 400,
+		'height'           => 150,
+		'header-text'      => false,
 	) );
 	add_theme_support( 'genesis-after-entry-widget-area' );
 	add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );
+
 
 	//If using WooCommerce uncomment the theme support below
 	//add_theme_support( 'genesis-connect-woocommerce' ); //Uncomment if using woocommerce
@@ -74,12 +74,15 @@ function genesischild_theme_setup() {
 	//Remove Genesis blog page
 	add_filter( 'theme_page_templates', 'genesis_remove_blog_archive' );
 
+	
+
 	//Uncomment and unregister widget areas in function below
 	//add_action( 'widgets_init', 'wpb_remove_some_widgets' );
 
 	//Image sizes
 
 	//add_image_size( 'blog-feature', 380, 380, true );
+
 
 }
 
@@ -320,3 +323,24 @@ function genesischild_remove_comment_form_allowed_tags( $defaults ) {
 	$defaults['comment_notes_after'] = '';
 	return $defaults;
 }
+
+
+function wpb_swap_header() {
+?>
+	<?php if ( get_header_image() ) : ?>
+	<a title="what put me here" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+		<img  src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php esc_attr( get_bloginfo( 'name' ) ); ?>">
+	</a>
+	<?php endif; // End header image check. ?>
+<?php
+}
+add_action('genesis_site_title','wpb_swap_header');
+
+
+
+add_filter('upload_mimes', 'themeprefix_add_svg_images');
+//Allow SVG Images Via Media Uploader 
+function themeprefix_add_svg_images($mimetypes) { 
+	$mimetypes['svg'] = 'image/svg+xml'; 
+	return $mimetypes; 
+} 

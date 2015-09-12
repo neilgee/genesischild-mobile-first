@@ -1702,10 +1702,14 @@ a.more-link:hover {
 
 	.home .wrap {
 		max-width: 1200px;
+		padding-left: 0; 
+  		padding-right: 0; 
 	}
 
 	.site-inner {
 		padding-top: 40px;
+		padding-left: 0; 
+  		padding-right: 0; 
 	}
 
 	/* ## Title Area
