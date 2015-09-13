@@ -76,6 +76,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - HTML Tags and Attributes is removed from comments
 - The font 'Open Sans' is enqueued from Google Fonts in functions.php
 - Author name removed in Post Meta for posts
+- SVG support for uploads and fallbacks can use PNG format fallback filed in same directory
 
 Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 
