@@ -50,7 +50,7 @@ function genesischild_theme_setup() {
 	add_action( 'genesis_before_header','genesischild_preheader_widget' );
 
 	//Add Custom Header HTML image
-	add_action( 'genesis_site_title','genesischild_swap_header' );
+	add_action( 'genesis_site_title','genesischild_swap_header', 5 );
 
 	//Re-arrange header nav
 	remove_action( 'genesis_after_header','genesis_do_nav' );
