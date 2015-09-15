@@ -48,8 +48,8 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - Secondary Menu remains in default area and is Secondary Location
 
 ###Custom Header
-- Custom Header is supported via Appearance > Header, suggested size is 400x150px
-- The header now uses the *genesis_seo_title* filter and uses an <img>
+- Custom Header is supported via Appearance > Header, suggested size is 400x150px which you can change in the Custom Header Array in *functions.php*
+- The header now uses the *genesis_seo_title* filter and uses an `<img>` element.
 
 ###Background Image
 - Background Images is supported, a background image can be uploaded in the WP Dashboard via Appearance > Background, this will scale to fit any viewport via BackstrechJS.
