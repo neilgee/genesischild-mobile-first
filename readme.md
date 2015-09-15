@@ -48,7 +48,8 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - Secondary Menu remains in default area and is Secondary Location
 
 ###Custom Header
-- Custom Header is supported via Appearance > Header, suggested size is 400x100px
+- Custom Header is supported via Appearance > Header, suggested size is 400x150px
+- The header now uses the *genesis_seo_title* filter and uses an <img>
 
 ###Background Image
 - Background Images is supported, a background image can be uploaded in the WP Dashboard via Appearance > Background, this will scale to fit any viewport via BackstrechJS.
@@ -61,7 +62,9 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 ###CSS
 - Regular style.css with all Genesis Framework and placeholders to start new project
 - 1 x IE styles in CSS directory for IE9 and lower
-- 2 CSS min breakpoints are used min 768px which does ipad + desktop layout and then wider at min 1200px.
+
+###Media Queries
+- 2 x CSS min breakpoints are used min 768px which does ipad + desktop layout and then wider at min 1200px.
 
 ###WooCommerce
 - WooCommerce style sheet set to load before main style sheet
