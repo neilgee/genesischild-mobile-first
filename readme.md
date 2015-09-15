@@ -58,6 +58,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - FontAwesome is enabled.
 - backstretch.min.js is enabled (via CDN) if a custom background is used.
 - Respond.JS is enabled to give CSS3 Media Query support to IE8.
+- SVGeezy is enabled for fallback SVG support
 
 ###CSS
 - Regular style.css with all Genesis Framework and placeholders to start new project
