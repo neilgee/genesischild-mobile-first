@@ -660,13 +660,11 @@ a.alignnone {
 }
 
 .alignleft {
-	float: left;
-	text-align: left;
+	text-align: center;
 }
 
 .alignright {
-	float: right;
-	text-align: right;
+	text-align: center;
 }
 
 a.alignleft,
@@ -1000,7 +998,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
 	color: #666;
 }
-.nav-primary .genesis-nav-menu a:last-child {
+.nav-primary .genesis-nav-menu li:last-child > a {
 	padding-right: 0;
 }
 
@@ -1023,6 +1021,13 @@ img.alignright,
 	color: #000;
 }
 
+
+/* FrontPage Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.optincontainer, .herocontainer, .home-module-container {
+	padding: 2%;
+}
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -1252,7 +1257,7 @@ li.comment {
 }
 
 .footer-widgets .widget {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .footer-widgets p:last-child {
@@ -1280,13 +1285,6 @@ li.comment {
 .postfooterleft .textwidget {
 	text-align: center;
 	padding: 1%;
-}
-
-/* FrontPage Widgets
----------------------------------------------------------------------------------------------------- */
-
-.optincontainer, .herocontainer, .home-module-container {
-	padding: 2%;
 }
 
 
@@ -1413,6 +1411,16 @@ a.more-link:hover {
 
 	.entry {
 		padding: 50px 60px;
+	}
+
+	.alignleft {
+		float: left;
+		text-align: left;
+	}
+
+	.alignright {
+		float: right;
+		text-align: right;
 	}
 
 
@@ -1656,13 +1664,17 @@ a.more-link:hover {
 
 
 	.genesis-nav-menu a {
-		padding: 30px 24px;
+		padding: 30px 12px;
 	}
 	
 
 	/* Footer
 	---------------------------------------------------------------------------------------------------- */
 	
+	.footer-widgets .widget {
+		margin-bottom: 10px;
+	}
+
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3 {
@@ -1729,6 +1741,13 @@ a.more-link:hover {
 
 	.site-header .widget-area {
 		width: 73%; /*800px*/
+	}
+
+	/* ## Menu Spacing
+	--------------------------------------------- */
+
+	.genesis-nav-menu a {
+		padding: 30px 24px;
 	}
 
 
