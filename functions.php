@@ -21,9 +21,11 @@ function genesischild_theme_setup() {
 
 	remove_action( 'wp_head', 'genesis_custom_header_style');
 	add_theme_support( 'custom-header', array(
-		'width'            => 400,
-		'height'           => 150,
-		'header-text'      => false,
+		'width'       => 400,
+		'height'      => 150,
+		'header-text' => false,
+		'flex-height' => false,
+		'flex-width'  => false,
 	) );
 
 	add_theme_support( 'genesis-after-entry-widget-area' );
