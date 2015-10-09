@@ -30,7 +30,7 @@ The Home Page has been widgetised and the default Genesis loop can be removed.
 
 To remove the Genesis home page loop tweak the **front-page.php** file by uncommenting line 28:
 ```php
-cgp_genesis_no_content();
+wpb_genesis_no_content();
 ```
 
 and commenting line 90:
@@ -82,6 +82,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - Author name removed in Post Meta for posts
 - SVG support for uploads and fallbacks can use PNG format fallback filed in same directory
 - Beaver Builder full width CSS styles added - leaves header and footer elements intact but full width for inner page.
+- 'Open Sans' Google font is enabled and set to the default
 
 Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 

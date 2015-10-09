@@ -26,15 +26,15 @@ add_action( 'genesis_after_header','genesischild_homecontent_widget');
  * @copyright (c)2014, Neil Gee
  */
  
-//cgp_genesis_no_content();
+//wpb_genesis_no_content();
 
-function cgp_genesis_no_content() {
-	cgp_genesis_header();
-	cgp_genesis_footer();
+function wpb_genesis_no_content() {
+	wpb_genesis_header();
+	wpb_genesis_footer();
 }
 
 // Customised Genesis Header
-function cgp_genesis_header() {
+function wpb_genesis_header() {
 	do_action( 'genesis_doctype' );
 	do_action( 'genesis_title' );
 	do_action( 'genesis_meta' );
@@ -69,7 +69,7 @@ function cgp_genesis_header() {
 }
 
 // Customised Genesis Footer
-function cgp_genesis_footer() {
+function wpb_genesis_footer() {
 	//genesis_structural_wrap( 'site-inner', 'close' );
 	//echo '</div>'; //* end .site-inner or #inner
 	
