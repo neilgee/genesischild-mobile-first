@@ -378,7 +378,7 @@ input[type="submit"],
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 300;
-	padding: 16px 24px;
+	padding: 10px 15px;
 	text-transform: uppercase;
 	width: auto;
 }
@@ -1799,9 +1799,9 @@ Beaver Builder Full Width
 .beforecontent {background-color:coral;}
 .aftercontent {background-color:coral;}
 
-.hometop{background-color: aquamarine;}
-.homemiddle{background-color: cadetblue; }
-.homebottom {background-color: indianred; }*/
+.home-top-container {background-color: aquamarine;}
+.home-middle-container {background-color: cadetblue; }
+.home-bottom-container {background-color: indianred; }*/
 
 .site-inner {padding-top:10px;}
 
