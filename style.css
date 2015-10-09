@@ -462,14 +462,8 @@ th {
 .site-inner {
 	clear: both;
 	padding-top: 40px;
-	padding-left: 2%;
-	padding-right: 2%;
 }
 
-.home .site-inner {
-	padding-left: 0;
-	padding-right: 0;
-}
 
 /* ## Column Widths and Positions
 --------------------------------------------- */
@@ -480,7 +474,7 @@ th {
 	width: 100%;
 }
 
-.site-inner,
+
 .wrap {
 	padding-left: 5%;
 	padding-right: 5%;
@@ -1025,10 +1019,14 @@ img.alignright,
 /* FrontPage Widgets
 ---------------------------------------------------------------------------------------------------- */
 
-.optincontainer, .herocontainer, .home-module-container {
+.optincontainer,
+.herocontainer,
+.home-module-container,
+.home-top-container,
+.home-middle-container,
+.home-bottom-container {
 	padding: 2%;
 }
-
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1397,6 +1395,40 @@ a.more-link:hover {
 }
 
 
+/*
+Beaver Builder Full Width
+---------------------------------------------------------------------------------------------------- */
+
+	
+.fl-builder .site-inner .wrap {
+	padding: 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.fl-builder .site-inner {
+		padding: 0;
+		border-top: none;
+	}
+	
+	.fl-builder .site-inner .wrap {
+		max-width: none;
+	}
+	
+	.fl-builder .entry {
+		padding: 0;
+		margin-bottom: 0;
+		border-top: none;
+	}
+	
+	.fl-builder .breadcrumb,
+	.fl-builder .entry-header {
+		display: none;
+	}
+
+}
+
+
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -1552,15 +1584,7 @@ a.more-link:hover {
 	/* Layout
 	---------------------------------------------------------------------------------------------------- */
 
-	.home .site-inner,
 	.wrap {
-		max-width: 960px;
-		margin: 0 auto;
-		padding-left: 0; 
-  		padding-right:0; 
-	}
-	.site-inner,
-	.home .wrap {
 		max-width: 960px;
 		margin: 0 auto;
 		padding-left: 1%; 
@@ -1708,16 +1732,11 @@ a.more-link:hover {
 		padding: 20px 0;
 	}
 
-	.site-inner,
-	.wrap {
-		max-width: 1200px;
-	}
-
 	.home .site-inner {
 		max-width: none;
 	}
 
-	.home .wrap {
+	.wrap {
 		max-width: 1200px;
 		padding-left: 0; 
   		padding-right: 0; 
