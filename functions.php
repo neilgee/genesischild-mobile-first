@@ -29,7 +29,7 @@ function genesischild_theme_setup() {
 	) );
 
 	add_theme_support( 'genesis-after-entry-widget-area' );
-	add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );
+	add_theme_support( 'genesis-structural-wraps', array( 'site-inner', 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );
 
 
 	//If using WooCommerce uncomment the theme support below

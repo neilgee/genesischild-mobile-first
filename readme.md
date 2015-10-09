@@ -13,9 +13,9 @@ It has a number of widgets areas.
 * Header Right
 * Hero - Home Page only *front-page.php*
 * Optin - Home Page only *front-page.php*
-* Home Left - Home Page only *front-page.php*
+* Home Top - Home Page only *front-page.php*
 * Home Middle - Home Page only *front-page.php*
-* Home Right - Home Page only *front-page.php*
+* Home Bottom - Home Page only *front-page.php*
 * Before Content *posts only*
 * After Content *posts only*
 * Footer Widget Header
@@ -69,7 +69,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 
 ###WooCommerce
 - WooCommerce style sheet set to load before main style sheet
-- Some generic CSS styles declared in styles.css
+- Some generic WooCommerce CSS styles declared in styles.css
 - WooCommerce theme support declared as an action in functions.php but commented out
 
 ###Miscellaneous
@@ -81,6 +81,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - The font 'Open Sans' is enqueued from Google Fonts in functions.php
 - Author name removed in Post Meta for posts
 - SVG support for uploads and fallbacks can use PNG format fallback filed in same directory
+- Beaver Builder full width CSS styles added - leaves header and footer elements intact but full width for inner page.
 
 Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 
