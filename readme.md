@@ -13,9 +13,9 @@ It has a number of widgets areas.
 * Header Right
 * Hero - Home Page only *front-page.php*
 * Optin - Home Page only *front-page.php*
-* Home Left - Home Page only *front-page.php*
+* Home Top - Home Page only *front-page.php*
 * Home Middle - Home Page only *front-page.php*
-* Home Right - Home Page only *front-page.php*
+* Home Bottom - Home Page only *front-page.php*
 * Before Content *posts only*
 * After Content *posts only*
 * Footer Widget Header
