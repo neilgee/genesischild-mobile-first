@@ -23,7 +23,7 @@ add_action( 'genesis_after_header','genesischild_homecontent_widget');
  * @package   Genesis Custom Front Page - No Inner Content
  * @author    Neil Gee
  * @link      http://wpbeaches.com/
- * @copyright (c)2014, Neil Gee
+ * @copyright (c)2015, Neil Gee
  */
  
 //wpb_genesis_no_content();
