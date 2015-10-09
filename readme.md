@@ -69,7 +69,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 
 ###WooCommerce
 - WooCommerce style sheet set to load before main style sheet
-- Some generic CSS styles declared in styles.css
+- Some generic WooCommerce CSS styles declared in styles.css
 - WooCommerce theme support declared as an action in functions.php but commented out
 
 ###Miscellaneous
