@@ -28,7 +28,7 @@ It has a number of widgets areas.
 The Home Page has been widgetised and the default Genesis loop can be removed.
 
 
-To remove the Genesis home page loop tweak the **front-page.php** file by uncommenting line 28:
+To remove the Genesis home page loop tweak the **front-page.php** file by uncommenting line 89:
 ```php
 wpb_genesis_no_content();
 ```
