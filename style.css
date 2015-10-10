@@ -820,6 +820,14 @@ img.alignright,
 	padding: 20px 5%;
 }
 
+.site-header .widget-area {
+	text-align: center;
+}
+
+.site-header .widget-area .widget {
+	margin: 20px auto;
+}
+
 /* ## Title Area
 --------------------------------------------- */
 
@@ -946,7 +954,7 @@ img.alignright,
 .genesis-nav-menu a,
 .genesis-nav-menu > .first > a,
 .genesis-nav-menu > .last > a {
-	padding: 20px 16px;
+	padding: 10px;
 	color: #333;
 	display: block;
 }
@@ -1032,6 +1040,10 @@ img.alignright,
 
 .entry {
 	margin-bottom: 40px;
+}
+
+.home .wrap .entry {
+	margin-bottom: 0;
 }
 
 .content .entry {
@@ -1575,6 +1587,11 @@ Beaver Builder Full Width
 		float: right;
 		text-align: right;
 	}
+
+	.site-header .widget-area .widget {
+    	margin: 0;
+    }
+
 
 
 
