@@ -820,13 +820,6 @@ img.alignright,
 	padding: 20px 5%;
 }
 
-.header-image .site-title > a {
- float: left;
- min-height: 150px;
- width: 100%;
-}
-
-
 /* ## Title Area
 --------------------------------------------- */
 
@@ -943,6 +936,10 @@ img.alignright,
 }
 
 .genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > li:last-of-type > a {
 	padding-right: 0;
 }
 

@@ -26,7 +26,6 @@ add_action( 'genesis_after_header','genesischild_homecontent_widget');
  * @copyright (c)2015, Neil Gee
  */
  
-//wpb_genesis_no_content();
 
 function wpb_genesis_no_content() {
 	wpb_genesis_header();
@@ -87,5 +86,5 @@ function wpb_genesis_footer() {
 <?php
 	}
 
-
+//wpb_genesis_no_content();
 genesis();
