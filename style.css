@@ -461,7 +461,7 @@ th {
 
 .site-inner {
 	clear: both;
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 
@@ -1757,7 +1757,6 @@ Beaver Builder Full Width
 	}
 
 	.site-inner {
-		padding-top: 40px;
 		padding-left: 0; 
   		padding-right: 0; 
 	}
@@ -1817,7 +1816,6 @@ Beaver Builder Full Width
 .home-middle-container {background-color: cadetblue; }
 .home-bottom-container {background-color: indianred; }*/
 
-.site-inner {padding-top:10px;}
 
 
 
