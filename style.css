@@ -56,9 +56,8 @@ Template: genesis
 - Site Footer
 - Media Queries
 	- Retina Display
-	- Max-width: 1200px
-	- Max-width: 960px
-	- Max-width: 800px
+	- Min-width: 768px
+	- Min-width: 1200px
 - Print Styles
 */
 
