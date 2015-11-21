@@ -176,7 +176,6 @@ a {
 a:hover,
 a:focus {
 	color: #333;
-	text-decoration: underline;
 }
 
 p {
@@ -761,13 +760,13 @@ img.alignnone,
 a.alignleft,
 img.alignleft,
 .wp-caption.alignleft {
-	margin: 0 24px 24px 0;
+	margin: 0;
 }
 
 a.alignright,
 img.alignright,
 .wp-caption.alignright {
-	margin: 0 0 24px 24px;
+	margin: 0;
 }
 
 .wp-caption-text {
@@ -822,7 +821,6 @@ img.alignright,
 --------------------------------------------- */
 
 .featured-content .entry {
-	border-bottom: 2px solid #f5f5f5;
 	margin-bottom: 20px;
 	padding: 0 0 24px;
 }
@@ -832,8 +830,8 @@ img.alignright,
 }
 
 .featured-content .entry-title {
-	font-size: 20px;
-	font-size: 2rem;
+	font-size: 30px;
+	font-size: 3rem;
 }
 
 
@@ -1158,7 +1156,8 @@ img.alignright,
 .home-module-container,
 .home-top-container,
 .home-middle-container,
-.home-bottom-container {
+.home-bottom-container,
+.footerwidgetheader-container {
 	padding: 2%;
 }
 /* # Content Area
@@ -1510,9 +1509,9 @@ li.comment {
 }
 
 .woocommerce .quantity .qty {
-	padding: 8px;
-	font-size: 16px;
-	font-size: 1.6rem;
+	padding: 4px;
+	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 .woocommerce form .form-row input.input-text, 
@@ -1531,19 +1530,22 @@ a.more-link {
 	font-size:14px;
 	font-size: 1.4rem;
 	margin-top:10px;
-	padding:5px 20px;
-	border-radius:4px;
-	color:#fff;
-	background-color:#9c9c9c;
-	border:1px solid #7e7e7e;
+	padding:10px 20px;
+	border-radius:2px;
+	color:#000;
+	background-color:transparent;
+	border:1px solid #000;
 	transition-property: opacity;
 	transition-delay: 0.3s;
 	transition-duration: .5s;
+	text-transform: uppercase;
+	font-weight: 600;
 	
 }
 a.more-link:hover {
-	opacity:.6;
+	opacity:.8;
 	color:#fff;
+	background-color:#000;
 }
 
 
@@ -1607,6 +1609,19 @@ Beaver Builder Full Width
 		float: right;
 		text-align: right;
 	}
+
+	a.alignleft,
+	img.alignleft,
+	.wp-caption.alignleft {
+		margin: 0 24px 24px 0;
+	}
+
+	a.alignright,
+	img.alignright,
+	.wp-caption.alignright {
+		margin: 0 0 24px 24px;
+	}
+
 
 
 	/* Columns
@@ -1846,7 +1861,7 @@ Beaver Builder Full Width
 
 
 	.genesis-nav-menu a {
-		padding: 30px 12px;
+		padding: 12px;
 	}
 	
 
@@ -1943,7 +1958,7 @@ Beaver Builder Full Width
 /
 /These colors where used to visualise the various widget areas - they are commented out by default
 ------------------------------------------------------------------------------------------------------------------------*/
-/*.preheadercontainer {background-color:aquamarine;}
+.preheadercontainer {background-color:aquamarine;}
 .preheaderleft {background-color:aliceblue;}
 .preheaderright {background-color:antiquewhite;}
 
@@ -1958,7 +1973,7 @@ Beaver Builder Full Width
 
 .home-top-container {background-color: aquamarine;}
 .home-middle-container {background-color: cadetblue; }
-.home-bottom-container {background-color: indianred; }*/
+.home-bottom-container {background-color: indianred; }
 
 
 
