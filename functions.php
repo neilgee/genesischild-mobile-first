@@ -10,11 +10,11 @@
 //Menu Plugin - This is what I am using for my mobile menu - https://wordpress.org/plugins/slicknav-mobile-menu/
 
 // Start the engine the other way around - set up child after parent - add in theme supports, actions and filters
-add_action( 'genesis_setup', 'genesischild_theme_setup' );
+add_action( 'genesis_setup', 'genesischild_theme_setup', 15 );
 
 function genesischild_theme_setup() { 
 	//Load in theme supports	
-	add_theme_support( 'html5' );
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption'  ) );
 	add_theme_support( 'genesis-responsive-viewport' );
 	add_theme_support( 'genesis-footer-widgets', 3 );
 	add_theme_support( 'custom-background' );
@@ -83,13 +83,22 @@ function genesischild_theme_setup() {
 	//Allow for SVG uploads
 	add_filter('upload_mimes', 'genesischild_add_svg_images');
 
+	//Uncomment and unregister Genesis page layouts
+	//genesis_unregister_layout( 'content-sidebar' );
+	//genesis_unregister_layout( 'sidebar-content' );
+	//genesis_unregister_layout( 'content-sidebar-sidebar' );
+	//genesis_unregister_layout( 'sidebar-sidebar-content' );
+	//genesis_unregister_layout( 'sidebar-content-sidebar' );
+	//genesis_unregister_layout( 'full-width-content' );
+
 
 	//Uncomment and unregister widget areas in function below
 	//add_action( 'widgets_init', 'genesischild_remove_some_widgets' );
 
 	//Image sizes
-
 	//add_image_size( 'blog-feature', 380, 380, true );
+
+	load_theme_textdomain('genesischild', get_stylesheet_directory_uri() . '/languages');
 
 
 }
@@ -97,7 +106,7 @@ function genesischild_theme_setup() {
 //Remove Unwanted Widgts
 function genesischild_remove_some_widgets(){
 	//Example below, to action these uncomment the add_action above
-	unregister_sidebar( 'header-right' );	
+	unregister_sidebar( 'sidebar-alt' );	
 }
 
 
@@ -110,7 +119,7 @@ function genesischild_scripts_styles() {
  	wp_enqueue_script( 'svgeezy-init', get_stylesheet_directory_uri() . '/js/svgeezy-init.js', array('svgeezy'), '1.0.0', true );
 
 	wp_enqueue_style ( 'googlefonts' , '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800', '', '2', 'all' );
-	wp_enqueue_style ( 'fontawesome' , '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', '' , '4.4.0', 'all' );
+	wp_enqueue_style ( 'fontawesome' , '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', '' , '4.4.0', 'all' );
 	
 	//wp_enqueue_style( 'dashicons' ); //Uncomment if DashIcons required in front end
 }
