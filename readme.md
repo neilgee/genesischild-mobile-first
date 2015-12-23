@@ -56,7 +56,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 
 ###Javascripts
 - FontAwesome is enabled.
-- backstretch.min.js is enabled (via CDN) if a custom background is used.
+- backstretch.min.js is enabled (via CDN) if a custom background is used. (disabled)
 - Respond.JS is enabled to give CSS3 Media Query support to IE8.
 - SVGeezy is enabled for fallback SVG support
 
@@ -71,7 +71,7 @@ Areas are highlighted to show boundaries and full width wraps these colors are c
 - WooCommerce style sheet set to load before main style sheet
 - Some generic WooCommerce CSS styles declared in styles.css
 - WooCommerce theme support declared as an action in functions.php but commented out
-- No WooCommerce Connect plugin required
+- Using Genesis Connect for WooCommerce
 
 ###Miscellaneous
 - PHP is enabled to execute in widget areas
