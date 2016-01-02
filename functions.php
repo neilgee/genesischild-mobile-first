@@ -365,8 +365,3 @@ function genesischild_content_limit_read_more_markup( $output, $content, $link )
 	return $output;
 
 }
-
-add_action('myplugin_after_hook','mobile_menu_after');
-function mobile_menu_after() {
-echo '<p>Hello Mobile Menu</p>';
-}
