@@ -3,7 +3,7 @@ Theme Name: genesischild-mobile-first
 Description: GenesisChild Mobile First is a vanilla base starter theme created for Genesis Framework
 Author: Neil Gee/WP Beaches
 Author URI: http://www.wpbeaches.com/
-Version: 2.2.2
+Version: 2.2.6
 Tags: Contains regular Widget areas as well as preheader, home page Hero area, optin wrap and post footer widget areas
 Template: genesis
 */
@@ -132,21 +132,12 @@ input[type="search"]{
 /* ## Typographical Elements
 --------------------------------------------- */
 
-html {
-    font-size: 62.5%; /* 10px browser default */
-}
-
-/* Chrome fix */
-body > div {
-    font-size: 1.8rem;
-}
 
 body {
 	background-color: #fff;
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 300;
 	line-height: 1.625;
 	margin: 0;
@@ -221,7 +212,6 @@ blockquote::before {
 	content: "\201C";
 	display: block;
 	font-size: 30px;
-	font-size: 3rem;
 	height: 0;
 	left: -20px;
 	position: relative;
@@ -247,32 +237,26 @@ h6 {
 
 h1 {
 	font-size: 36px;
-	font-size: 3.6rem;
 }
 
 h2 {
 	font-size: 30px;
-	font-size: 3rem;
 }
 
 h3 {
 	font-size: 24px;
-	font-size: 2.4rem;
 }
 
 h4 {
 	font-size: 20px;
-	font-size: 2rem;
 }
 
 h5 {
 	font-size: 18px;
-	font-size: 1.8rem;
 }
 
 h6 {
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 /* ## Objects
@@ -362,7 +346,6 @@ textarea {
 	border: 1px solid #ddd;
 	color: #333;
 	font-size: 18px;
-	font-size: 1.8rem;
 	font-weight: 300;
 	padding: 16px;
 	width: 100%;
@@ -402,7 +385,6 @@ input[type="submit"],
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 300;
 	padding: 10px 15px;
 	text-transform: uppercase;
@@ -643,14 +625,12 @@ th {
 .author-box {
 	background-color: #fff;
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 40px;
 	padding: 40px;
 }
 
 .author-box-title {
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 4px;
 }
 
@@ -692,12 +672,10 @@ th {
 
 .archive-title {
 	font-size: 20px;
-	font-size: 2rem;
 }
 
 .entry-title {
 	font-size: 36px;
-	font-size: 3.6rem;
 }
 
 .entry-title a,
@@ -712,7 +690,6 @@ th {
 
 .widget-title {
 	font-size: 18px;
-	font-size: 1.8rem;
 	margin-bottom: 20px;
 }
 
@@ -771,7 +748,6 @@ img.alignright,
 
 .wp-caption-text {
 	font-size: 14px;
-	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: center;
 }
@@ -831,7 +807,6 @@ img.alignright,
 
 .featured-content .entry-title {
 	font-size: 30px;
-	font-size: 3rem;
 }
 
 
@@ -857,7 +832,6 @@ img.alignright,
 
 .enews-widget input {
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 16px;
 }
 
@@ -949,7 +923,6 @@ img.alignright,
 
 .site-title {
 	font-size: 32px;
-	font-size: 3.2rem;
 	font-weight: 400;
 	line-height: 1.2;
 }
@@ -963,7 +936,6 @@ img.alignright,
 
 .site-description {
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -995,7 +967,6 @@ img.alignright,
 .genesis-nav-menu {
 	clear: both;
 	font-size: 16px;
-	font-size: 1.6rem;
 	line-height: 1;
 	width: 100%;
 }
@@ -1036,7 +1007,6 @@ img.alignright,
 	border: 1px solid #eee;
 	border-top: 0;
 	font-size: 14px;
-	font-size: 1.4rem;
 	padding: 20px;
 	position: relative;
 	width: 200px;
@@ -1061,10 +1031,6 @@ img.alignright,
 }
 
 .genesis-nav-menu > .last > a {
-	padding-right: 0;
-}
-
-.genesis-nav-menu > li:last-of-type > a {
 	padding-right: 0;
 }
 
@@ -1207,7 +1173,6 @@ img.alignright,
 
 p.entry-meta {
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 0;
 }
 
@@ -1252,7 +1217,6 @@ p.entry-meta {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
-	font-size: 1.6rem;
 	padding: 8px 12px;
 }
 
@@ -1283,7 +1247,6 @@ p.entry-meta {
 
 .comment-header {
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 li.comment {
@@ -1331,7 +1294,6 @@ li.comment {
 .form-allowed-tags {
 	background-color: #f5f5f5;
 	font-size: 16px;
-	font-size: 1.6rem;
 	padding: 24px;
 }
 
@@ -1341,7 +1303,6 @@ li.comment {
 
 .sidebar {
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 .sidebar li {
@@ -1368,7 +1329,6 @@ li.comment {
 .footerwidgetheader .widget-title {
 	text-align: center;
 	font-size: 30px;
-	font-size: 3rem;
 	margin: 20px auto;
 }
 
@@ -1417,7 +1377,6 @@ li.comment {
 .site-footer {
 	background-color: #fff;
 	font-size: 16px;
-	font-size: 1.6rem;
 	line-height: 1;
 	padding: 40px 0;
 	text-align: center;
@@ -1447,7 +1406,6 @@ li.comment {
 .woocommerce-page #respond input#submit, 
 .woocommerce-page #content input.button {
 	font-size: 12px;
-	font-size: 1.2rem;
 }
 
 .woocommerce ul.products li.product, 
@@ -1511,14 +1469,12 @@ li.comment {
 .woocommerce .quantity .qty {
 	padding: 4px;
 	font-size: 14px;
-	font-size: 1.4rem;
 }
 
 .woocommerce form .form-row input.input-text, 
 .woocommerce form .form-row textarea {
 	padding: 10px;
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 
@@ -1528,7 +1484,6 @@ li.comment {
 a.more-link {
 	display:inline-block;
 	font-size:14px;
-	font-size: 1.4rem;
 	margin-top:10px;
 	padding:10px 20px;
 	border-radius:2px;
@@ -1593,7 +1548,6 @@ Beaver Builder Full Width
 	body {
 		background-color: #f5f5f5;
 		font-size: 18px;
-		font-size: 1.8rem;
 	}
 
 	.entry {

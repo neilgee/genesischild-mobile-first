@@ -73,13 +73,15 @@ function genesischild_theme_setup() {
 
 	//Remove comment HTML tags
 	add_filter( 'comment_form_defaults', 'genesischild_comment_form_defaults' );
-	add_filter( 'comment_form_defaults', 'genesischild_remove_comment_form_allowed_tags' );
 
 	//Post info change
 	add_filter( 'genesis_post_info', 'genesischild_post_info' );
 
 	//Remove Genesis blog page
 	add_filter( 'theme_page_templates', 'genesischild_remove_blog_archive' );
+
+	//Remove blog header from blog posts page
+	remove_action( 'genesis_before_loop', 'genesis_do_posts_page_heading' );
 
 	//Allow for SVG uploads
 	add_filter('upload_mimes', 'genesischild_add_svg_images');
@@ -240,15 +242,15 @@ function genesischild_optin_widget() {
 //Position the Home Area
 function genesischild_homecontent_widget() {
 	genesis_widget_area( 'home-top', array(
-	'before' => '<div id="home-top" class="home-top"><div class="wrap">',
+	'before' => '<div class="home-top-container"><div class="wrap home-top">',
 	'after'  => '</div></div>',
 	) );
 	genesis_widget_area ( 'home-middle', array(
-	'before' => '<div id="home-middle" class="home-middle"><div class="wrap">',
+	'before' => '<div class="home-middle-container"><div class="wrap home-middle">',
 	'after'  => '</div></div>',
 	) );
 	genesis_widget_area ( 'home-bottom', array(
-	'before' => '<div id="home-bottom" class="home-bottom"><div class="wrap">',
+	'before' => '<div class="home-bottom-container"><div class="wrap home-bottom">',
 	'after'  => '</div></div>',
 	) );
 }
@@ -322,14 +324,10 @@ function genesischild_post_info( $post_info ) {
 //Change the comments header
 function genesischild_comment_form_defaults( $defaults ) {
 	$defaults['title_reply'] = __( 'Leave a Comment' );
-	return $defaults;
-}
-
-//Remove comment form HTML tags and attributes
-function genesischild_remove_comment_form_allowed_tags( $defaults ) {
 	$defaults['comment_notes_after'] = '';
 	return $defaults;
 }
+
 
 //Add an image tag in the site title element for the main logo
 function genesischild_swap_header($title, $inside, $wrap) {
