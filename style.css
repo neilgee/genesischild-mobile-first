@@ -41,7 +41,7 @@ Template: genesis
 	- Title Area
 	- Widget Area
 - Site Navigation
-	- Accessible Menu			
+	- Accessible Menu
 	- Site Header Navigation
 	- Primary Navigation
 	- Secondary Navigation
@@ -184,12 +184,12 @@ li {
 	list-style-type: none;
 }
 
-hr {		
-	border: 0;		
-	border-collapse: collapse;		
-	border-top: 1px solid #ddd;		
-	clear: both;		
-	margin: 1em 0;		
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	clear: both;
+	margin: 1em 0;
 }
 
 b,
@@ -756,11 +756,11 @@ img.alignright,
 	margin-bottom: 0;
 }
 
-		
-.entry-content .wp-audio-shortcode,		
-.entry-content .wp-playlist,		
-.entry-content .wp-video {		
-	margin: 0 0 28px;		
+
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+	margin: 0 0 28px;
 }
 
 
@@ -951,10 +951,10 @@ img.alignright,
 	text-indent: -9999px;
 }
 
-.genesis-nav-menu, 
-.site-description, 
-.site-header .title-area, 
-.site-header .search-form, 
+.genesis-nav-menu,
+.site-description,
+.site-header .title-area,
+.site-header .search-form,
 .site-title {
 	text-align: center;
 }
@@ -971,9 +971,9 @@ img.alignright,
 	width: 100%;
 }
 
-.genesis-nav-menu a {			
-	text-decoration: none;		
-	display: block;			
+.genesis-nav-menu a {
+	text-decoration: none;
+	display: block;
 }
 
 .genesis-nav-menu .menu-item {
@@ -1392,23 +1392,23 @@ li.comment {
 }
 
 
-/* WooCommerce 
+/* WooCommerce
 ---------------------------------------------------------------------------------------------------- */
 
-.woocommerce a.button, 
-.woocommerce button.button, 
-.woocommerce input.button, 
-.woocommerce #respond input#submit, 
-.woocommerce #content input.button, 
-.woocommerce-page a.button, 
-.woocommerce-page button.button, 
-.woocommerce-page input.button, 
-.woocommerce-page #respond input#submit, 
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce #content input.button,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
+.woocommerce-page input.button,
+.woocommerce-page #respond input#submit,
 .woocommerce-page #content input.button {
 	font-size: 12px;
 }
 
-.woocommerce ul.products li.product, 
+.woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
 	padding: 1%;
 }
@@ -1422,19 +1422,19 @@ li.comment {
 	list-style-type: none;
 }
 
-.woocommerce .input-checkbox, 
+.woocommerce .input-checkbox,
 .woocommerce .input-radio {
 	box-shadow: none;
 	width: auto;
 }
 
-.woocommerce .related ul li.product img, 
-.woocommerce .related ul.products li.product img, 
-.woocommerce .upsells.products ul li.product img, 
-.woocommerce .upsells.products ul.products li.product img, 
-.woocommerce-page .related ul li.product img, 
-.woocommerce-page .related ul.products li.product img, 
-.woocommerce-page .upsells.products ul li.product img, 
+.woocommerce .related ul li.product img,
+.woocommerce .related ul.products li.product img,
+.woocommerce .upsells.products ul li.product img,
+.woocommerce .upsells.products ul.products li.product img,
+.woocommerce-page .related ul li.product img,
+.woocommerce-page .related ul.products li.product img,
+.woocommerce-page .upsells.products ul li.product img,
 .woocommerce-page .upsells.products ul.products li.product img {
 	width: auto;
 }
@@ -1451,13 +1451,13 @@ li.comment {
 	width:auto;
 }
 
-.woocommerce .related ul li.product, 
-.woocommerce .related ul.products li.product, 
-.woocommerce .upsells.products ul li.product, 
-.woocommerce .upsells.products ul.products li.product, 
-.woocommerce-page .related ul li.product, 
-.woocommerce-page .related ul.products li.product, 
-.woocommerce-page .upsells.products ul li.product, 
+.woocommerce .related ul li.product,
+.woocommerce .related ul.products li.product,
+.woocommerce .upsells.products ul li.product,
+.woocommerce .upsells.products ul.products li.product,
+.woocommerce-page .related ul li.product,
+.woocommerce-page .related ul.products li.product,
+.woocommerce-page .upsells.products ul li.product,
 .woocommerce-page .upsells.products ul.products li.product {
 	padding: 4%;
 }
@@ -1471,14 +1471,14 @@ li.comment {
 	font-size: 14px;
 }
 
-.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row input.input-text,
 .woocommerce form .form-row textarea {
 	padding: 10px;
 	font-size: 16px;
 }
 
 
-/* Read More 
+/* Read More
 ---------------------------------------------------------------------------------------------------- */
 
 a.more-link {
@@ -1495,7 +1495,7 @@ a.more-link {
 	transition-duration: .5s;
 	text-transform: uppercase;
 	font-weight: 600;
-	
+
 }
 a.more-link:hover {
 	opacity:.8;
@@ -1508,9 +1508,14 @@ a.more-link:hover {
 Beaver Builder Full Width
 ---------------------------------------------------------------------------------------------------- */
 
-	
+
 .fl-builder .site-inner .wrap {
 	padding: 0;
+}
+
+.fl-builder .breadcrumb,
+.fl-builder .entry-header {
+	display: none;
 }
 
 
@@ -1519,20 +1524,15 @@ Beaver Builder Full Width
 		padding: 0;
 		border-top: none;
 	}
-	
+
 	.fl-builder .site-inner .wrap {
 		max-width: none;
 	}
-	
+
 	.fl-builder .entry {
 		padding: 0;
 		margin-bottom: 0;
 		border-top: none;
-	}
-	
-	.fl-builder .breadcrumb,
-	.fl-builder .entry-header {
-		display: none;
 	}
 
 }
@@ -1641,7 +1641,7 @@ Beaver Builder Full Width
 
 	/* Header
 	---------------------------------------------------------------------------------------------------- */
-	
+
 	.preheaderright .textwidget,
 	.preheaderleft .textwidget,
 	.postfooterright .textwidget,
@@ -1654,15 +1654,15 @@ Beaver Builder Full Width
 	.postfooterright  {
 		text-align: right;
 		float: right;
-	}	
+	}
 
 	.preheaderleft,
 	.postfooterleft  {
 		text-align: left;
 	}
-	
-	.site-description, 
-	.site-header .title-area, 
+
+	.site-description,
+	.site-header .title-area,
 	.site-title {
 		text-align: left;
 	}
@@ -1714,8 +1714,8 @@ Beaver Builder Full Width
 	.wrap {
 		max-width: 960px;
 		margin: 0 auto;
-		padding-left: 1%; 
-  		padding-right:1%; 
+		padding-left: 1%;
+  		padding-right:1%;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap {
@@ -1740,7 +1740,7 @@ Beaver Builder Full Width
 
 	.content-sidebar-sidebar .sidebar-secondary {
   		float: right;
-	}	
+	}
 
 	/* Content
 	---------------------------------------------------------------------------------------------------- */
@@ -1775,13 +1775,13 @@ Beaver Builder Full Width
 
 	.sidebar-secondary {
 		width: 15%; /*180px*/
-		float: left;	
+		float: left;
 	}
 
 	.sidebar .widget {
 		padding: 40px;
-	}		
-	
+	}
+
 	/* Menus
 	---------------------------------------------------------------------------------------------------- */
 	.menu-secondary {
@@ -1817,11 +1817,11 @@ Beaver Builder Full Width
 	.genesis-nav-menu a {
 		padding: 12px;
 	}
-	
+
 
 	/* Footer
 	---------------------------------------------------------------------------------------------------- */
-	
+
 	.footer-widgets .widget {
 		margin-bottom: 10px;
 	}
@@ -1854,7 +1854,7 @@ Beaver Builder Full Width
 
 
 @media only screen and (min-width: 1200px) {
-	
+
 	.site-header .wrap {
 		padding: 20px 0;
 	}
@@ -1865,13 +1865,13 @@ Beaver Builder Full Width
 
 	.wrap {
 		max-width: 1200px;
-		padding-left: 0; 
-  		padding-right: 0; 
+		padding-left: 0;
+  		padding-right: 0;
 	}
 
 	.site-inner {
-		padding-left: 0; 
-  		padding-right: 0; 
+		padding-left: 0;
+  		padding-right: 0;
 	}
 
 	/* ## Title Area

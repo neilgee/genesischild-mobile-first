@@ -19,7 +19,7 @@ function genesischild_theme_setup() {
 	add_theme_support( 'genesis-footer-widgets', 3 );
 	add_theme_support( 'custom-background' );
 	//* Add Accessibility support
-	add_theme_support( 'genesis-accessibility', array( 'headings', 'drop-down-menu',  'search-form', 'skip-links', 'rems' ) );
+	add_theme_support( 'genesis-accessibility', array( 'headings', 'drop-down-menu',  'search-form', 'skip-links' ) );
 
 	remove_action( 'wp_head', 'genesis_custom_header_style');
 	add_theme_support( 'custom-header', array(
