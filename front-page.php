@@ -16,7 +16,7 @@ add_action( 'genesis_after_header','genesischild_optin_widget', 9 );
 add_action( 'genesis_after_header','genesischild_homecontent_widget');
 
 
-// Run Custom Genesis with no inner content
+// Run Custom Genesis with no site-inner content on front page
 /**
  * Remove Inner Home Page Content on a Genesis Theme
  *
@@ -25,7 +25,7 @@ add_action( 'genesis_after_header','genesischild_homecontent_widget');
  * @link      http://wpbeaches.com/
  * @copyright (c)2015, Neil Gee
  */
- 
+
 
 function wpb_genesis_no_content() {
 	wpb_genesis_header();
@@ -37,7 +37,7 @@ function wpb_genesis_header() {
 	do_action( 'genesis_doctype' );
 	do_action( 'genesis_title' );
 	do_action( 'genesis_meta' );
-	
+
 	wp_head(); //* we need this for plugins
 	?>
 	</head>
@@ -48,17 +48,17 @@ function wpb_genesis_header() {
 		'context' => 'body',
 	) );
 	do_action( 'genesis_before' );
-	
+
 	genesis_markup( array(
 		'html5'   => '<div %s>',
 		'xhtml'   => '<div id="wrap">',
 		'context' => 'site-container',
 	) );
-	
+
 	do_action( 'genesis_before_header' );
 	do_action( 'genesis_header' );
 	do_action( 'genesis_after_header' );
-	
+
 	//genesis_markup( array(
 		//'html5'   => '<div %s>',
 		//'xhtml'   => '<div id="inner">',
@@ -71,13 +71,13 @@ function wpb_genesis_header() {
 function wpb_genesis_footer() {
 	//genesis_structural_wrap( 'site-inner', 'close' );
 	//echo '</div>'; //* end .site-inner or #inner
-	
+
 	do_action( 'genesis_before_footer' );
 	do_action( 'genesis_footer' );
 	do_action( 'genesis_after_footer' );
-	
+
 	echo '</div>'; //* end .site-container or #wrap
-	
+
 	do_action( 'genesis_after' );
 	wp_footer(); //* we need this for plugins
 	?>
