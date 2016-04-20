@@ -35,7 +35,7 @@ function genesischild_register_theme_customizer( $wp_customize ) {
 
 	// Add setting.
 	$wp_customize->add_setting( 'hero_bg', array(
-		'default'     => get_stylesheet_directory_uri() . '/images/hero-bg.jpg',
+		//'default'     => get_stylesheet_directory_uri() . '/images/hero-bg.jpg',
 	) );
 
 	// Add control.
