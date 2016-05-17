@@ -6,9 +6,9 @@
  */
 
 // Remove the default Genesis main stylesheet to we can load it later.
-remove_action( 'genesis_meta', 'genesis_load_stylesheet' );// Remove order of main style sheet.
+// remove_action( 'genesis_meta', 'genesis_load_stylesheet' );// Remove order of main style sheet.
 // Load Genesis main style sheet later so we beat out all the other guys.
-add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 998 ); // Load main style sheet 2nd last.
+// add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 998 ); // Load main style sheet 2nd last.
 
 
 /**
