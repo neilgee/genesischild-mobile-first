@@ -163,7 +163,7 @@ textarea:focus,
 }
 
 a {
-	color: #e5554e;
+	color: #c3251d;
 	text-decoration: none;
 }
 
@@ -729,7 +729,7 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus  {
-	color: #e5554e;
+	color: #c3251d;
 }
 
 .widget-title {
@@ -880,7 +880,7 @@ img.alignright,
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #e5554e;
+	background-color: #c3251d;
 	color: #fff;
 	margin: 0;
 	width: 100%;
@@ -1028,7 +1028,7 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-	color: #e5554e;
+	color: #c3251d;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1118,7 +1118,7 @@ img.alignright,
 
 /* ## Primary Navigation
 --------------------------------------------- */
-
+/*
 .nav-primary {
     background-color:#fff;
 }
@@ -1135,14 +1135,16 @@ img.alignright,
 .nav-primary .genesis-nav-menu .current-menu-item > a {
 	color: #666;
 }
-.nav-primary .genesis-nav-menu li:last-child > a {
-	padding-right: 0;
-}
+
 
 .nav-primary .genesis-nav-menu .sub-menu a:hover,
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
 	color: #999;
+}*/
+
+.genesis-nav-menu li:last-child > a {
+	padding-right: 0;
 }
 
 
@@ -1285,7 +1287,7 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-	background-color: #e5554e;
+	background-color: #c3251d;
 }
 
 /*  Comments
@@ -1932,13 +1934,7 @@ Beaver Builder Full Width
 		padding: 30px 24px;
 	}
 
-
 }
-
-
-
-
-
 
 
 

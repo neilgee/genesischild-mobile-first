@@ -6,9 +6,9 @@
  */
 
 // Remove the default Genesis main stylesheet to we can load it later.
-// remove_action( 'genesis_meta', 'genesis_load_stylesheet' );// Remove order of main style sheet.
+remove_action( 'genesis_meta', 'genesis_load_stylesheet' );// Remove order of main style sheet.
 // Load Genesis main style sheet later so we beat out all the other guys.
-// add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 998 ); // Load main style sheet 2nd last.
+add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 998 ); // Load main style sheet 2nd last.
 
 
 /**
@@ -19,7 +19,7 @@ function genesischild_scripts_styles() {
 //	wp_enqueue_script( 'svgeezy-init', get_stylesheet_directory_uri() . '/js/svgeezy-init.js', array( 'svgeezy' ), '1.0.0', true );
 	wp_enqueue_script( 'placeholder' , get_stylesheet_directory_uri() . '/js/placeholder.js', array( 'jquery' ), '1', true );
 	wp_enqueue_style( 'googlefonts' , '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800', array(), '2', 'all' );
-	wp_enqueue_style( 'fontawesome' , '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array() , '4.6.1', 'all' );
+	wp_enqueue_style( 'fontawesome' , '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', array() , '4.6.3', 'all' );
 	// wp_enqueue_style( 'dashicons' ); //Uncomment if DashIcons required in front end
 }
 add_action( 'wp_enqueue_scripts', 'genesischild_scripts_styles', 997 ); // All the rest load before.
