@@ -3,7 +3,7 @@ Theme Name: genesischild-mobile-first
 Description: GenesisChild Mobile First is a vanilla base starter theme created for Genesis Framework
 Author: Neil Gee/WP Beaches
 Author URI: http://www.wpbeaches.com/
-Version: 2.4
+Version: 2.5
 Tags: Contains regular Widget areas as well as preheader, home page Hero area, optin wrap and post footer widget areas
 Template: genesis
 */
@@ -281,9 +281,8 @@ img {
 	height: auto;
 }
 
-.featured-content img,
-.gallery img {
-	width: auto;
+figure {
+	margin: 0;
 }
 
 /* Fix IE not scaling SVGs */
