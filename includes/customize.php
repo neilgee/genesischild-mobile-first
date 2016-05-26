@@ -139,6 +139,6 @@ function genesischild_register_theme_customizer( $wp_customize ) {
 			)
   ) );
 
-// Remove default Genesis logo/title
+	// Remove default Genesis logo/title
 	$wp_customize->remove_control('blog_title');
 }
