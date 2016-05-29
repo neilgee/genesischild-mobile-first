@@ -844,6 +844,10 @@ img.alignright,
 	word-wrap: break-word;
 }
 
+.footer-widgets .widget-area {
+	margin-bottom: 50px;
+}
+
 .widget p:last-child,
 .widget ul > li:last-of-type,
 .widget-area .widget:last-of-type {
@@ -1842,6 +1846,10 @@ Beaver Builder Full Width
 	.content {
 		width: 66.66%; /*800px*/
 		float: right;
+	}
+
+	.footer-widgets .widget-area {
+		margin-bottom: 0;
 	}
 
 	/* Sidebars
