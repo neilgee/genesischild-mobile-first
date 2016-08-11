@@ -30,7 +30,7 @@ The Home Page has been widgetised and the default Genesis loop can be removed.
 
 To remove the Genesis home page loop tweak the **front-page.php** file by uncommenting line 88:
 ```php
-wpb_genesis_no_content();
+gc_genesis_no_content();
 ```
 
 and commenting line 90:
@@ -67,8 +67,6 @@ To use this you have to enable the BackStretch script in */includes/scripts-styl
 All scripts are in */includes/scripts-styles.php*
 - FontAwesome is enabled.
 - backstretch.min.js is enabled (via CDN) if a custom background is used. (disabled)
-- Respond.JS is enabled to give CSS3 Media Query support to IE8.
-- SVGeezy is disabled
 - FItVids is disabled
 
 ###CSS
@@ -81,7 +79,7 @@ All scripts are in */includes/scripts-styles.php*
 ###WooCommerce
 - WooCommerce style sheet set to load before main style sheet
 - Some generic WooCommerce CSS styles declared in styles.css
-- WooCommerce theme support declared as an action in functions.php but commented out
+- WooCommerce theme support declared as an action in woocommerce.php
 - Using Genesis Connect for WooCommerce
 
 ###Miscellaneous
@@ -90,13 +88,25 @@ All scripts are in */includes/scripts-styles.php*
 - 'Read More' link is enabled on post excerpts
 - Comments header changed to 'Leave a Comment'
 - HTML Tags and Attributes is removed from comments
-- The font 'Open Sans' is enqueued from Google Fonts in functions.php
+- The font 'Open Sans' is enqueued from Google Fonts in scripts-styles.php
 - Author name removed in Post Meta for posts
 - SVG support for uploads and fallbacks can use PNG format fallback filed in same directory
 - Beaver Builder full width CSS styles added - leaves header and footer elements intact but full width for inner page.
 - 'Open Sans' Google font is enabled and set to the default
-- Genesis Theme defaults now in */includes*
+- Genesis Theme defaults now in */includes/theme-defaults.php*
 - Generic landing page added
+
+###Modular Approach
+At the top of functions.php there a number of include files that you can comment/uncomment for adding functionality.
+- customize.php contains all the Customizer options.
+- output.php renders the Customizer options CSS
+- responsive-menu.php adds the Genesis Responsive Menu
+- scripts-styles.php contains all JS and CSS files for inclusion
+- theme-defaults.php contains all the theme defaults
+- widgets.php contains all the widgets that need to be registered
+- woocommerce.php contains all the woocommerce functionality, commented out snippets included
+- class-featured-custom-post-type-widget.php widget for the Genesis Featured Custom posts
+- plugins.php is only used by me which contains a list of installable plugins via TPGMA
 
 Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 
