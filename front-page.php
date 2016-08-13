@@ -18,7 +18,7 @@ add_action( 'genesis_after_header','gc_hero_widget' );
 add_action( 'genesis_after_header','gc_homecontent_widget' );
 
 
-// Run Custom Genesis with no inner content.
+// Run Custom Genesis with no inner content markup.
 /**
  * Remove Inner Home Page Content on a Genesis Theme
  *
