@@ -467,7 +467,7 @@ input[type="submit"].small {
 }
 
 .site-container button:disabled,
-	display: inline-block;		.site-container button:disabled:hover,
+.site-container button:disabled:hover,
 .site-container input:disabled,
 .site-container input:disabled:hover,
 .site-container input[type="button"]:disabled,
