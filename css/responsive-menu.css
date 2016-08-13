@@ -2,11 +2,6 @@
 /* # Responsive Menu
 ---------------------------------------------------------------------------------------------------- */
 
-/*.js .genesis-nav-menu .sub-menu a,
-.js .genesis-nav-menu .sub-menu {
-	width: 100%;
-}*/
-
 .genesis-nav-menu li,
 .site-header ul.genesis-nav-menu {
   float: none;
