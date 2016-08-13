@@ -75,7 +75,7 @@ function gc_genesis_footer() {
 	do_action( 'genesis_footer' );
 	do_action( 'genesis_after_footer' );
 
-	echo '</div>'; // End .site-container or #wrap.
+	echo '</div>'; // End .site-container or #wrap
 
 	do_action( 'genesis_after' );
 	wp_footer(); // We need this for plugins.
@@ -84,7 +84,7 @@ function gc_genesis_footer() {
 	</html>
 <?php
 }
-// Uncomment the gc_genesis_no_content() and comment genesis() to remove the site inner div on tehe front page
+// Uncomment the gc_genesis_no_content() and comment out genesis() to remove the site inner div on the front page
 // gc_genesis_no_content();
 
 genesis();
