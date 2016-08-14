@@ -897,7 +897,7 @@ img.alignright,
 
 .featured-content .entry {
 	margin-bottom: 20px;
-	padding: 0 0 24px;
+	padding: 0 0 20px;
 }
 
 .footer-widgets .entry {
@@ -905,7 +905,7 @@ img.alignright,
 }
 
 .featured-content .entry-title {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 
@@ -1218,7 +1218,6 @@ img.alignright,
 
 .optincontainer,
 .herocontainer,
-.home-module-container,
 .home-top-container,
 .home-middle-container,
 .home-bottom-container,
@@ -1226,14 +1225,30 @@ img.alignright,
 	padding: 2%;
 }
 
-.home-content .widget-title {
-	text-align: center;
+.home-top-container {
+background: #f5f5f5;
+}
+.home-middle-container {
+background: #ddd;
+}
+.home-bottom-container {
+background: #aaa;
 }
 
 
-/* # Content Area
----------------------------------------------------------------------------------------------------- */
 
+
+/* # Home Content Widget Areas
+---------------------------------------------------------------------------------------------------- */
+.home-content .widget-title {
+	text-align: center;
+	font-size: 32px;
+}
+
+.home-content .entry {
+	margin-bottom: 30px;
+	text-align: center;
+}
 
 /* # PreHeader
 ---------------------------------------------------------------------------------------------------- */
@@ -1257,10 +1272,6 @@ img.alignright,
 
 .entry {
 	margin-bottom: 40px;
-}
-
-.home .wrap .entry {
-	margin-bottom: 0;
 }
 
 .content .entry {
@@ -1456,7 +1467,7 @@ li.comment {
 .footer-widgets {
 	background-color: #333;
 	clear: both;
-	padding-top: 40px;
+	padding: 2% 0;
 	text-align: center;
 }
 
@@ -1497,9 +1508,9 @@ li.comment {
 
 .site-footer {
 	background-color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1;
-	padding: 40px 0;
+	padding: 15px 0;
 	text-align: center;
 }
 
@@ -1727,7 +1738,7 @@ Beaver Builder Full Width
 	.genesis-nav-menu li.right {
 		display: inline-block;
 	}
-	.home .featuredpage:first-of-type,
+
 	.first {
 		clear: both;
 		margin-left: 0;
@@ -1858,6 +1869,14 @@ Beaver Builder Full Width
 
 	.footer-widgets .widget-area {
 		margin-bottom: 0;
+	}
+
+
+	/* Home Content
+	---------------------------------------------------------------------------------------------------- */
+	.home-content .entry {
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 
 	/* Sidebars
