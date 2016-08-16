@@ -110,6 +110,6 @@ At the top of functions.php there a number of include files that you can comment
 
 Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 
-![Genesis Child Theme](http://wpbeaches.com/images/genesischild-mobile-first.png)
+![Genesis Child Theme](http://wpbeaches.com/images/gcmf-screen.png)
 
-![Genesis Child Theme Widget Areas](http://coolestguidesontheplanet.com/wp-content/themes/gee/images/genesischild-widgets1.png)
+![Genesis Child Theme Widget Areas](https://wpbeaches.com/images/gc-screen-widgets.png)

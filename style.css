@@ -1458,7 +1458,7 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
 
 
-.footerwidgetheader .widget-title {
+.footerwidgetheader-container .widget-title {
 	text-align: center;
 	font-size: 30px;
 	margin: 20px auto;
