@@ -255,6 +255,9 @@ function gc_theme_setup() {
 			return $html;
 	}
 	add_filter( 'widget_text','gc_execute_php_widgets' );
+	
+	// Allow shortcodes in excerpt
+	add_filter( 'the_excerpt', 'do_shortcode');
 
 } // <~Closing brace for genesis_setup function
 
