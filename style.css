@@ -509,7 +509,7 @@ a.more-link:hover {
 }
 
 .more-link {
-    position: relative;
+   	position: relative;
 }
 
 
@@ -596,15 +596,6 @@ th:first-child {
 	word-wrap: break-word;
 }
 
-
-/* ## Column Widths and Positions
---------------------------------------------- */
-
-.full-width-content .content {
-	width: 100%;
-}
-
-
 .wrap {
 	padding-left: 5%;
 	padding-right: 5%;
@@ -624,45 +615,10 @@ th:first-child {
 	margin-bottom: 4px;
 }
 
-.five-sixths,
-.four-sixths,
-.one-fourth,
-.one-half,
-.one-sixth,
-.one-third,
-.three-fourths,
-.three-sixths,
-.two-fourths,
-.two-sixths,
-.two-thirds {
-	margin: 0;
-	width: 100%;
-}
-
-
 
 .sidebar .widget {
 	padding: 40px;
 }
-
-.content,
-.content-sidebar-sidebar .content,
-.content-sidebar-sidebar .content-sidebar-wrap,
-.footer-widgets-1,
-.footer-widgets-2,
-.footer-widgets-3,
-.sidebar-content-sidebar .content,
-.sidebar-content-sidebar .content-sidebar-wrap,
-.sidebar-primary,
-.sidebar-secondary,
-.sidebar-sidebar-content .content,
-.sidebar-sidebar-content .content-sidebar-wrap,
-.site-header .widget-area,
-.title-area {
-	width: 100%;
-}
-
-
 
 
 /* # Common Classes
@@ -1007,12 +963,10 @@ img.alignright,
 	margin: 20px auto;
 }
 
+
+
 /* ## Title Area
 --------------------------------------------- */
-
-.header-full-width .title-area {
-	width: 100%;
-}
 
 .title-area {
 	padding: 10px 0;
@@ -1065,7 +1019,6 @@ img.alignright,
 	clear: both;
 	font-size: 16px;
 	line-height: 1;
-	width: 100%;
 }
 
 .genesis-nav-menu a {
@@ -1430,9 +1383,6 @@ li.comment {
 	display: none;
 }
 
-.bypostauthor {
-}
-
 .form-allowed-tags {
 	background-color: #f5f5f5;
 	font-size: 16px;
@@ -1795,6 +1745,11 @@ Beaver Builder Full Width
 		background-position: center top;
 	}
 
+	.header-full-width .title-area {
+		float: none;
+		width: 100%;
+	}
+
 	.site-header .search-form {
 		margin: 16px auto;
 	}
@@ -1818,10 +1773,8 @@ Beaver Builder Full Width
 	}
 
 	.site-header .widget-area .widget {
-    	margin: 0;
-    }
-
-
+	    	margin: 0;
+	}
 
 
 	/* Layout
@@ -1860,6 +1813,10 @@ Beaver Builder Full Width
 
 	/* Content
 	---------------------------------------------------------------------------------------------------- */
+	.full-width-content .content {
+		width: 100%;
+	}
+
 	.content-sidebar-sidebar .content-sidebar-wrap,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-sidebar-content .content-sidebar-wrap {
@@ -2033,7 +1990,8 @@ Beaver Builder Full Width
 
 
 
-/* # Print Styles
+
+/* Print Styles
 ---------------------------------------------------------------------------------------------------- */
 
 @media print {
