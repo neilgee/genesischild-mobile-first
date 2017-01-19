@@ -79,8 +79,6 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
 html,
 input[type="search"]{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
 }
 
@@ -94,36 +92,12 @@ input[type="search"]{
 /* ## Float Clearing
 --------------------------------------------- */
 
-.author-box:before,
-.clearfix:before,
-.entry:before,
-.entry-content:before,
-.footer-widgets:before,
-.nav-primary:before,
-.nav-secondary:before,
-.pagination:before,
-.site-container:before,
-.site-footer:before,
-.site-header:before,
-.site-inner:before,
-.wrap:before {
+.clearfix:before {
 	content: " ";
 	display: table;
 }
 
-.author-box:after,
-.clearfix:after,
-.entry:after,
-.entry-content:after,
-.footer-widgets:after,
-.nav-primary:after,
-.nav-secondary:after,
-.pagination:after,
-.site-container:after,
-.site-footer:after,
-.site-header:after,
-.site-inner:after,
-.wrap:after {
+.clearfix:after {
 	clear: both;
 	content: " ";
 	display: table;
@@ -136,12 +110,21 @@ input[type="search"]{
 /* ## Typographical Elements
 --------------------------------------------- */
 
+html {
+	font-size: 62.5%; /* 10px browser default */
+}
+
+/* Chrome fix */
+body > div {
+	font-size: 1.6rem;
+}
 
 body {
 	background-color: #fff;
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	font-size:1.6rem;
 	font-weight: 300;
 	line-height: 1.625;
 	margin: 0;
@@ -156,10 +139,7 @@ input[type="submit"],
 textarea:focus,
 .button,
 .gallery img {
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition:    all 0.1s ease-in-out;
-	-ms-transition:     all 0.1s ease-in-out;
-	-o-transition:      all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
 	transition:         all 0.1s ease-in-out;
 }
 
@@ -216,6 +196,7 @@ blockquote::before {
 	content: "\201C";
 	display: block;
 	font-size: 30px;
+	font-size:3rem;
 	height: 0;
 	left: -20px;
 	position: relative;
@@ -241,26 +222,32 @@ h6 {
 
 h1 {
 	font-size: 36px;
+	font-size:3.6rem;
 }
 
 h2 {
 	font-size: 30px;
+	font-size:3rem;
 }
 
 h3 {
 	font-size: 24px;
+	font-size:2.4rem;
 }
 
 h4 {
 	font-size: 20px;
+	font-size:2rem;
 }
 
 h5 {
 	font-size: 18px;
+	font-size:1.8rem;
 }
 
 h6 {
 	font-size: 16px;
+	font-size:1.6rem;
 }
 
 /* ## Colors
@@ -384,6 +371,7 @@ textarea {
 	border: 1px solid #ddd;
 	color: #333;
 	font-size: 18px;
+	font-size:1.8rem;
 	font-weight: 300;
 	padding: 16px;
 	width: 100%;
@@ -423,6 +411,7 @@ input[type="submit"],
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
+	font-size:1.6rem;
 	font-weight: 300;
 	padding: 10px 15px;
 	text-transform: uppercase;
@@ -489,13 +478,17 @@ input[type="submit"].small {
 a.more-link {
 	display:inline-block;
 	font-size:14px;
+	font-size:1.4rem;
 	margin-top:10px;
 	padding:10px 20px;
 	border-radius:2px;
 	color:#000;
 	background-color:transparent;
+	-webkit-transition-property:opacity;
 	transition-property: opacity;
+	-webkit-transition-delay: 0.3s;
 	transition-delay: 0.3s;
+	-webkit-transition-duration: .5s;
 	transition-duration: .5s;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -592,13 +585,21 @@ th:first-child {
 
 .site-container {
 	display: -ms-flexbox;
+	display:-webkit-flex;
+	display:-webkit-box;
 	display:flex;
+	-ms-flex-direction:column;
+	-webkit-flex-direction:column;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
 	flex-direction:column;
 	height:100vh;
 }
 
 .site-inner {
 	-ms-flex:1;
+	-webkit-flex:1;
+	-webkit-box-flex:1;
 	flex:1;
 	width: 100%;
 	padding: 20px 0;
@@ -665,12 +666,14 @@ th:first-child {
 .author-box {
 	background-color: #fff;
 	font-size: 16px;
+	font-size:1.6rem;
 	margin-bottom: 40px;
 	padding: 40px;
 }
 
 .author-box-title {
 	font-size: 16px;
+	font-size:1.6rem;
 	margin-bottom: 4px;
 }
 
@@ -717,10 +720,12 @@ th:first-child {
 
 .archive-title {
 	font-size: 20px;
+	font-size:2rem;
 }
 
 .entry-title {
 	font-size: 36px;
+	font-size:3.6rem;
 }
 
 .entry-title a,
@@ -735,6 +740,7 @@ th:first-child {
 
 .widget-title {
 	font-size: 18px;
+	font-size:1.8rem;
 	margin-bottom: 20px;
 }
 
@@ -793,6 +799,7 @@ img.alignright,
 
 .wp-caption-text {
 	font-size: 14px;
+	font-size:1.4rem;
 	font-weight: 700;
 	text-align: center;
 }
@@ -871,6 +878,7 @@ img.alignright,
 
 .featured-content .entry-title {
 	font-size: 25px;
+	font-size:2.5rem;
 }
 
 
@@ -896,6 +904,7 @@ img.alignright,
 
 .enews-widget input {
 	font-size: 16px;
+	font-size:1.6rem;
 	margin-bottom: 16px;
 }
 
@@ -957,7 +966,6 @@ img.alignright,
 
 .site-header {
 	background-color: #fff;
-	min-height: 120px;
 }
 
 .site-header .wrap {
@@ -983,6 +991,7 @@ img.alignright,
 
 .site-title {
 	font-size: 32px;
+	font-size:3.2rem;
 	font-weight: 400;
 	line-height: 1.2;
 }
@@ -996,6 +1005,7 @@ img.alignright,
 
 .site-description {
 	font-size: 16px;
+	font-size:1.6rem;
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -1027,6 +1037,7 @@ img.alignright,
 .genesis-nav-menu {
 	clear: both;
 	font-size: 16px;
+	font-size:1.6rem;
 	line-height: 1;
 }
 
@@ -1052,10 +1063,7 @@ img.alignright,
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
-	-webkit-transition: opacity .4s ease-in-out;
-	-moz-transition:    opacity .4s ease-in-out;
-	-ms-transition:     opacity .4s ease-in-out;
-	-o-transition:      opacity .4s ease-in-out;
+	-webkit-transition:opacity .4s ease-in-out;
 	transition:         opacity .4s ease-in-out;
 	width: 200px;
 	z-index: 99999;
@@ -1066,6 +1074,7 @@ img.alignright,
 	border: 1px solid #eee;
 	border-top: 0;
 	font-size: 14px;
+	font-size:1.4rem;
 	padding: 20px;
 	position: relative;
 	width: 200px;
@@ -1215,6 +1224,7 @@ background: #aaa;
 .home-content .widget-title {
 	text-align: center;
 	font-size: 32px;
+	font-size:3.2rem;
 }
 
 .home-content .entry {
@@ -1283,6 +1293,7 @@ background: #aaa;
 
 p.entry-meta {
 	font-size: 16px;
+	font-size:1.6rem;
 	margin-bottom: 0;
 }
 
@@ -1309,7 +1320,19 @@ p.entry-meta {
 --------------------------------------------- */
 
 .pagination {
-	clear: both;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+	-ms-flex-pack: start;
+	-webkit-justify-content: flex-start;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
 	margin: 40px 0;
 }
 
@@ -1327,6 +1350,7 @@ p.entry-meta {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
+	font-size:1.6rem;
 	padding: 8px 12px;
 }
 
@@ -1357,6 +1381,7 @@ p.entry-meta {
 
 .comment-header {
 	font-size: 16px;
+	font-size:1.6rem;
 }
 
 li.comment {
@@ -1395,6 +1420,7 @@ li.comment {
 .form-allowed-tags {
 	background-color: #f5f5f5;
 	font-size: 16px;
+	font-size:1.6rem;
 	padding: 24px;
 }
 
@@ -1404,6 +1430,7 @@ li.comment {
 
 .sidebar {
 	font-size: 16px;
+	font-size:1.6rem;
 }
 
 .sidebar li {
@@ -1430,6 +1457,7 @@ li.comment {
 .footerwidgetheader-container .widget-title {
 	text-align: center;
 	font-size: 30px;
+	font-size:3rem;
 	margin: 20px auto;
 }
 
@@ -1478,6 +1506,7 @@ li.comment {
 .site-footer {
 	background-color: #fff;
 	font-size: 14px;
+	font-size:1.4rem;
 	line-height: 1;
 	padding: 15px 0;
 	text-align: center;
@@ -1538,9 +1567,15 @@ Beaver Builder Full Width
 @media only screen and (min-width: 768px) {
 
 
+	/* Chrome fix */
+	body > div {
+		font-size: 1.8rem;
+	}
+
 	body {
 		background-color: #f5f5f5;
 		font-size: 18px;
+		font-size:1.8rem;
 	}
 
 	.entry {
@@ -1661,6 +1696,18 @@ Beaver Builder Full Width
 
 	.site-header .wrap {
 		padding: 20px 1%;
+		display: -ms-flex;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: -webkit-box;
+		display: flex;
+		-ms-flex-flow: row;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
 	}
 
 	.site-header  .genesis-nav-menu {
@@ -1685,7 +1732,6 @@ Beaver Builder Full Width
 	--------------------------------------------- */
 
 	.title-area {
-		float: left;
 		width: 30%; /*400px*/
 	}
 
@@ -1693,8 +1739,6 @@ Beaver Builder Full Width
 	--------------------------------------------- */
 
 	.site-header .widget-area {
-		width: 70%; /*800px*/
-		float: right;
 		text-align: right;
 	}
 
@@ -1707,40 +1751,52 @@ Beaver Builder Full Width
 	---------------------------------------------------------------------------------------------------- */
 
 	.wrap {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: -webkit-box;
+		display: flex;
+		-ms-flex-flow: row;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
 		max-width: 960px;
 		margin: 0 auto;
 		padding-left: 1%;
-  		padding-right:1%;
-	}
-
-	.content-sidebar-sidebar .content-sidebar-wrap {
-		float: left;
-	}
-
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-sidebar-content .content-sidebar-wrap {
-		float: right;
-	}
-
-	.content-sidebar .content,
-	.content-sidebar-sidebar .content,
-	.sidebar-content-sidebar .content {
-		float: left;
-	}
-
-	.sidebar-content .sidebar-primary,
-	.sidebar-sidebar-content .sidebar-primary {
-		float: left;
-	}
-
-	.content-sidebar-sidebar .sidebar-secondary {
-  		float: right;
+		padding-right:1%;
 	}
 
 	/* Content
 	---------------------------------------------------------------------------------------------------- */
 	.full-width-content .content {
 		width: 100%;
+	}
+
+	.sidebar-content .content-sidebar-wrap,
+	.content-sidebar .content-sidebar-wrap,
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: -webkit-box;
+		display: flex;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+	}
+
+	.sidebar-content .content-sidebar-wrap .sidebar,
+	.sidebar-sidebar-content .content-sidebar-wrap .sidebar,
+	.sidebar-sidebar-content .content-sidebar-wrap + .sidebar-secondary,
+	.sidebar-content-sidebar  .content-sidebar-wrap + .sidebar-secondary {
+		-ms-flex-order: -1;
+		-webkit-order: -1;
+		-webkit-box-ordinal-group: 0;
+		order: -1;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -1757,7 +1813,6 @@ Beaver Builder Full Width
 
 	.content {
 		width: 66.66%; /*800px*/
-		float: right;
 	}
 
 	.footer-widgets .widget-area {
@@ -1779,14 +1834,12 @@ Beaver Builder Full Width
 
 	.sidebar-primary {
 		width: 30%; /*360px*/
-		float: right;
 	}
 
 	/* ### Secondary Sidebar */
 
 	.sidebar-secondary {
 		width: 15%; /*180px*/
-		float: left;
 	}
 
 	.sidebar .widget {
@@ -1833,6 +1886,7 @@ Beaver Builder Full Width
 	/* Footer
 	---------------------------------------------------------------------------------------------------- */
 
+
 	.footer-widgets .widget {
 		margin-bottom: 10px;
 	}
@@ -1841,19 +1895,6 @@ Beaver Builder Full Width
 	.footer-widgets-2,
 	.footer-widgets-3 {
 		width: 30%;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 5%;
-	}
-
-	.footer-widgets-1,
-	.footer-widgets-2 {
-		float: left;
-	}
-
-	.footer-widgets-3 {
-		float: right;
 	}
 
 	.footer-widgets {
@@ -1891,25 +1932,29 @@ Beaver Builder Full Width
   		padding-right: 0;
 	}
 
-	/* ## Title Area
+	/* Title Area
 	--------------------------------------------- */
 
 	.title-area {
 		width: 27%; /*400px*/
 	}
 
-	/* ## Header Widget Area
-	--------------------------------------------- */
 
-	.site-header .widget-area {
-		width: 73%; /*800px*/
-	}
-
-	/* ## Menu Spacing
+	/* Menu Spacing
 	--------------------------------------------- */
 
 	.genesis-nav-menu a {
 		padding: 30px 24px;
+	}
+
+	/* Site Footer
+	--------------------------------------------- */
+
+	.site-footer .wrap {
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		-webkit-box-pack: center;
+		justify-content: center;
 	}
 
 }
