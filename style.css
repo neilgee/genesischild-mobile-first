@@ -667,8 +667,8 @@ th:first-child {
 	background-color: #fff;
 	font-size: 16px;
 	font-size:1.6rem;
-	margin-bottom: 40px;
-	padding: 40px;
+	margin-bottom: 10px;
+	padding: 20px 40px 0;
 }
 
 .author-box-title {
@@ -1184,7 +1184,7 @@ img.alignright,
 
 
 
-/* FrontPage Widgets
+/* FrontPage Container Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 .optincontainer,
@@ -1192,24 +1192,28 @@ img.alignright,
 .home-top-container,
 .home-middle-container,
 .home-bottom-container,
-.footerwidgetheader-container {
-	padding: 2%;
-}
-
-.home-top-container {
-background: #f5f5f5;
-}
-.home-middle-container {
-background: #ddd;
-}
-.home-bottom-container {
-background: #aaa;
+.footerwidgetheader-container,
+.footer-widgets {
+	padding: 20px;
 }
 
 
+@media only screen and (min-width: 768px) {
+	.optincontainer,
+	.herocontainer,
+	.home-top-container,
+	.home-middle-container,
+	.home-bottom-container,
+	.footerwidgetheader-container,
+	.footer-widgets {
+		padding: 50px 40px;
+	}
+}
 
 
-/* # Home Content Widget Areas
+
+
+/* # Home Content Generic Widget Areas
 ---------------------------------------------------------------------------------------------------- */
 .home-content section {
 	clear: both;
@@ -1244,6 +1248,33 @@ background: #aaa;
 
 
 /* # Optin
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* # Home Top
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* # Home Middle
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* # Home Bottom
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* # Footer Header
 ---------------------------------------------------------------------------------------------------- */
 
 
@@ -1434,7 +1465,6 @@ li.comment {
 }
 
 .sidebar li {
-	border-bottom: 1px dotted #ddd;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
@@ -1464,7 +1494,6 @@ li.comment {
 .footer-widgets {
 	background-color: #333;
 	clear: both;
-	padding: 2% 0;
 	text-align: center;
 }
 
@@ -1483,10 +1512,10 @@ li.comment {
 	color: #fff;
 }
 
-.footer-widgets li {
-	border-bottom: 1px dotted #666;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
+.footer-widgets ul > li {
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+	line-height: 1.3;
 }
 
 .footer-widgets .widget {
@@ -1520,6 +1549,72 @@ li.comment {
 	text-align: center;
 	padding: 1%;
 }
+
+
+/*
+Business Profile
+---------------------------------------------------------------------------------------------------- */
+.footer-widgets .bp-opening-hours .bp-title {
+	display: none;
+}
+
+.bp-contact-card .bp-name {
+	margin-bottom: 0;
+}
+
+.bp-contact-card .bp-address {
+	margin-top: 0;
+}
+
+.bp-contact-card .bp-opening-hours {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.footer-widgets .bp-times {
+	    width: 58%;
+	    font-size: 14px;
+	}
+
+	.footer-widgets .bp-weekday-name {
+	    width: 42%;
+	    font-size: 14px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+	.footer-widgets .bp-times {
+		width: 58%;
+		font-size: 18px;
+	}
+
+	.footer-widgets .bp-weekday-name {
+		width: 42%;
+		font-size: 18px;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.footer-widgets .bp-times {
+		width: 60%;
+	}
+
+	.footer-widgets .bp-weekday-name {
+		width: 35%;
+	}
+
+	#bp-map-0 > div {
+		width: 90% !important;
+	}
+
+}
+
 
 
 /*
@@ -1768,6 +1863,10 @@ Beaver Builder Full Width
 		padding-right:1%;
 	}
 
+	.home-content {
+		display: block;
+	}
+
 	/* Content
 	---------------------------------------------------------------------------------------------------- */
 	.full-width-content .content {
@@ -1888,7 +1987,7 @@ Beaver Builder Full Width
 
 
 	.footer-widgets .widget {
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 	}
 
 	.footer-widgets-1,
@@ -1909,6 +2008,13 @@ Beaver Builder Full Width
 
 }
 
+@media only screen and (min-width: 1024px) {
+
+	body {
+		font-size: 18px;
+	}
+
+}
 
 
 @media only screen and (min-width: 1200px) {
