@@ -596,6 +596,13 @@ th:first-child {
 	height:100vh;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	.site-container {
+		display: block;
+	} /* Fix for IE10 & IE11 */
+}
+
 .site-inner {
 	-ms-flex:1;
 	-webkit-flex:1;
@@ -1869,7 +1876,8 @@ Beaver Builder Full Width
 
 	/* Content
 	---------------------------------------------------------------------------------------------------- */
-	.full-width-content .content {
+	.full-width-content .content,
+	.content-sidebar-wrap {
 		width: 100%;
 	}
 
