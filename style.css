@@ -92,11 +92,19 @@ input[type="search"]{
 /* ## Float Clearing
 --------------------------------------------- */
 
-.clearfix:before {
+.author-box::before,
+.entry::before,
+.entry-content::before,
+.pagination::before,
+.clearfix::before {
 	content: " ";
 	display: table;
 }
 
+.author-box::after,
+.entry::after,
+.entry-content::after,
+.pagination::after,
 .clearfix:after {
 	clear: both;
 	content: " ";
