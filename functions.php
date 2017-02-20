@@ -182,7 +182,7 @@ function gc_theme_setup() {
 	function gc_custom_logo( $title, $inside, $wrap ) {
 		// Check to see if the Custom Logo function exists and set what goes inside the wrapping tags.
 		if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) :
-			$logo = the_custom_logo();
+			$logo = get_custom_logo();
 		else :
 		 	$logo = get_bloginfo( 'name' );
 		endif;
