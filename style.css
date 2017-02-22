@@ -1,9 +1,13 @@
 /*
 Theme Name: genesischild-mobile-first
-Description: GenesisChild Mobile First is a vanilla base starter theme created for Genesis Framework
-Author: Neil Gee/WP Beaches
-Author URI: http://www.wpbeaches.com/
+Theme URI: https://github.com/neilgee/genesischild-mobile-first
+Description: GenesisChild Mobile First is a Genesis base starter theme created for Genesis Framework
+Author: Neil Gowran
+Author URI: http://www.wpbeaches.com
 Version: 2.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: genesischild
 Tags: Contains regular Widget areas as well as preheader, home page Hero area, optin wrap and post footer widget areas
 Template: genesis
 */
@@ -1644,6 +1648,10 @@ Beaver Builder Full Width
 .fl-builder .breadcrumb,
 .fl-builder .entry-header {
 	display: none;
+}
+
+.fl-builder-content {
+	width: 100%;
 }
 
 .fl-rich-text p:last-of-type {
