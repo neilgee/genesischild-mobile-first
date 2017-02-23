@@ -1,6 +1,6 @@
 <?php
 /**
- * Genesischild Theme
+ * GenesisChild Theme
  *
  * @package genesischild
  * @author  NeilGee
@@ -10,7 +10,7 @@
 
 add_action( 'genesis_setup', 'gc_theme_setup', 15 );
 /**
- * Genesischild theme set up
+ * GenesisChild theme set up
  *
  * Start the engine the other way around - set up child after parent - add in theme supports, actions and filters
  *
@@ -21,6 +21,9 @@ function gc_theme_setup() {
 	 define( 'CHILD_THEME_NAME', 'genesischild' );
 	 define( 'CHILD_THEME_URL', 'http://wpbeaches.com' );
 	 define( 'CHILD_THEME_VERSION', '2.4.0' );
+
+	 /** Allow SVG */
+	 define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
 	// Load in optional files.
 

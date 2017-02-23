@@ -4,7 +4,7 @@ This theme is a **Mobile First** version of GenesisChild - https://github.com/ne
 
 This is a basic starter **Genesis Child Theme** to be used with the **Genesis Framework** on **WordPress**.
 
-This Genesischild theme has a number of widgets areas, the majority are Front Page only.
+This GenesisChild theme has a number of widgets areas, the majority are Front Page only.
 
 ###Widgetised Areas
 - The theme contains the following widgetized areas
