@@ -1637,12 +1637,17 @@ Business Profile
 
 
 /*
-Beaver Builder Full Width
+Beaver Builder Full Width & Content Sidebar Layout
 ---------------------------------------------------------------------------------------------------- */
 
 
 .fl-builder .site-inner .wrap {
 	padding: 0;
+}
+
+.content-sidebar .site-inner .wrap {
+	padding-left: 5%;
+    	padding-right: 5%;
 }
 
 .fl-builder .breadcrumb,
@@ -1675,6 +1680,18 @@ Beaver Builder Full Width
 		border-top: none;
 	}
 
+	.content-sidebar .site-inner .wrap {
+		max-width: 960px;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.content-sidebar .site-inner .wrap {
+		max-width: 1200px;
+	}
 }
 
 
