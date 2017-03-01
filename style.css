@@ -1374,6 +1374,53 @@ p.entry-meta {
 	margin: 0 6px 0 2px;
 }
 
+
+.entry-time::before {
+    content: '\f469';
+    font-family: dashicons;
+    color: #666;
+    font-size: 25px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.entry-author::before {
+    content: '\f110';
+    font-family: dashicons;
+    color: #666;
+    font-size: 25px;
+    padding-right: 5px;
+    padding-left: 10px;
+    vertical-align: sub;
+}
+
+.entry-comments-link::before {
+    content: '\f101';
+    font-family: dashicons;
+    color: #666;
+    font-size: 25px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.entry-categories::before {
+    content: '\f322';
+    font-family: dashicons;
+    color: #666;
+    font-size: 25px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.entry-tags::before {
+    content: '\f323';
+    font-family: dashicons;
+    color: #666;
+    font-size: 25px;
+    padding-right: 5px;
+    vertical-align: sub;
+}
+
 /* Pagination
 --------------------------------------------- */
 
