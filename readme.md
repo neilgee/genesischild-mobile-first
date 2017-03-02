@@ -28,7 +28,7 @@ This GenesisChild theme has a number of widgets areas, the majority are Front Pa
 The Home Page has been widgetized and the default Genesis loop can be removed.
 
 
-To remove the Genesis home page loop tweak the **front-page.php** file by uncommenting line 88:
+To remove the Genesis home page loop edit the **front-page.php** file by uncommenting line 88:
 ```php
 gc_genesis_no_content();
 ```
@@ -51,6 +51,7 @@ Widget areas have background color and content applied to show boundaries.
 ###Custom Logo
 - Custom Logo is supported via the Customizer, suggested size is 400x150px which you can change in the *add_theme_support('custom-logo')* array in *functions.php*
 - The header logo  uses an `<img>` element and can support the SVG format.
+- SVGs are set to be allowed for upload by the constant 'ALLOW_UNFILTERED_UPLOADS' declared in *functions.php*
 
 ###Background Image
 - Background Images is supported, a background image can be uploaded in the WP Dashboard via Appearance > Background, this will scale to fit any viewport via BackStretchJS.
@@ -75,20 +76,21 @@ To use this you have to enable the BackStretch script in */includes/scripts-styl
 ###Featured Custom Post Type Widget for Genesis
 - Bundled in the theme is the 'Featured Custom Post Type Widget for Genesis', the widget is available from the normal widget area in the dashboard *Appearance > Widgets*.
 
-This widget builds on the default Genesis supplied Featured Post widget but can also display Custom Post Types and Taxonomies as well as output them in columns.
+This widget builds on the default Genesis supplied Featured Post widget but can also display Custom Post Types and Taxonomies as well as output them in columns. It is not necessary to install the plugin.
 
 *Ref - https://github.com/calliaweb/featured-custom-post-type-widget-for-genesis
 
 
 ###Javascripts
 All scripts are in */includes/scripts-styles.php*
-- FontAwesome is enabled.
-- backstretch.min.js is enabled (via CDN) if a custom background is used. (disabled)
+- The latest FontAwesome is enabled.
+- backstretch.min.js is (via CDN) if a custom background is used. (Disabled by default.)
 - FItVids is disabled
 
 ###CSS
-- Regular style.css with all Genesis Framework and placeholders to start new project
-- 1 x IE styles in CSS directory for IE9 and lower
+- style.css
+- 1 x IE styles in CSS directory for IE9 and lower - (Disabled by default.)
+- Flexbox styles have been used in CSS for *.wrap* and other page layouts - Flexbox styles have been autoprefixed to cater for last 5 browser versions.
 
 ###Media Queries
 - 2 x CSS min breakpoints are used: min 768px which covers iPad + desktop layout and then wider screens at min 1200px.
@@ -106,12 +108,15 @@ All scripts are in */includes/scripts-styles.php*
 - Shortcode enabled in widget areas
 - 'Read More' link is enabled on post excerpts
 - HTML Tags and Attributes is removed from comments
-- The font 'Open Sans' is enqueued from Google Fonts in *includes/scripts-styles.php*
+- The font 'Open Sans' is _not_ enqueued from Google Fonts in *includes/scripts-styles.php*
+- System font stack is the default font in style.css
 - Author name removed in Post Meta for posts
+- Meta has default icon styling with Dashicons
 - SVG support for image uploads
 - Beaver Builder full width CSS styles added - leaves header and footer elements intact but full width for inner page.
 - Genesis Theme defaults now in */includes*
 - Generic landing page added
+- Flexbox sticky footer added on site container with IE10/11 support
 
 ###Modular Approach
 At the top of functions.php there a number of include files that you can comment/uncomment for adding functionality.
