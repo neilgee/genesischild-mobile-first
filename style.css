@@ -2102,6 +2102,16 @@ Beaver Builder Full Width & Content Sidebar Layout
 		width: 50%;
 	}
 
+	/* Site Footer
+	--------------------------------------------- */
+
+	.site-footer .wrap {
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		-webkit-box-pack: center;
+		justify-content: center;
+	}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -2149,15 +2159,6 @@ Beaver Builder Full Width & Content Sidebar Layout
 		padding: 30px 24px;
 	}
 
-	/* Site Footer
-	--------------------------------------------- */
-
-	.site-footer .wrap {
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		-webkit-box-pack: center;
-		justify-content: center;
-	}
 
 }
 
