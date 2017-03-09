@@ -129,6 +129,10 @@ At the top of functions.php there a number of include files that you can comment
 - *woocommerce.php* contains all the woocommerce functionality, commented out snippets included
 - *class-featured-custom-post-type-widget.php* widget for the Genesis Featured Custom posts
 
+###Theme Defaults
+In `/includes/theme-defaults.php` there are a number of related Genesis theme options which have been set to my own needs for a starter theme including unregistering some widget areas and layouts.
+Also you can remove certain Genesis theme metaboxes, change to suit your needs, the file is documented.
+
 Download the zip rename the theme '**genesischild-mobile-first**' - place this theme in your WordPress installation **"/wp-content/themes/"** and activate in WordPress Dashboard
 
 ![Genesis Child Theme](http://wpbeaches.com/images/gcmf-screen.png)
