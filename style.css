@@ -779,12 +779,10 @@ a.alignnone {
 	display: inline-block;
 }
 
-.alignleft {
-	text-align: center;
-}
-
+.alignleft,
 .alignright {
 	text-align: center;
+	display: block;
 }
 
 a.alignleft,
@@ -1747,6 +1745,34 @@ Beaver Builder Full Width & Content Sidebar Layout
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+
+@media only screen and (min-width: 580px) {
+
+	.alignleft {
+		float: left;
+		text-align: left;
+	}
+
+	.alignright {
+		float: right;
+		text-align: right;
+	}
+
+
+	a.alignleft,
+	img.alignleft,
+	.wp-caption.alignleft {
+		margin: 0 24px 24px 0;
+	}
+
+	a.alignright,
+	img.alignright,
+	.wp-caption.alignright {
+		margin: 0 0 24px 24px;
+	}
+}
+
+
 @media only screen and (min-width: 768px) {
 
 
@@ -1764,29 +1790,6 @@ Beaver Builder Full Width & Content Sidebar Layout
 	.entry {
 		padding: 50px 60px;
 	}
-
-	.alignleft {
-		float: left;
-		text-align: left;
-	}
-
-	.alignright {
-		float: right;
-		text-align: right;
-	}
-
-	a.alignleft,
-	img.alignleft,
-	.wp-caption.alignleft {
-		margin: 0 24px 24px 0;
-	}
-
-	a.alignright,
-	img.alignright,
-	.wp-caption.alignright {
-		margin: 0 0 24px 24px;
-	}
-
 
 
 	/* Columns
@@ -2103,6 +2106,10 @@ Beaver Builder Full Width & Content Sidebar Layout
 		-webkit-justify-content: center;
 		-webkit-box-pack: center;
 		justify-content: center;
+	}
+
+	.footercontent {
+		width: 100%;
 	}
 }
 
