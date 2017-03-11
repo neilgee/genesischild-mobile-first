@@ -93,7 +93,7 @@ All scripts are in */includes/scripts-styles.php*
 - Flexbox styles have been used in CSS for *.wrap* and other page layouts - Flexbox styles have been autoprefixed to cater for last 5 browser versions.
 
 ###Media Queries
-- 2 x CSS min breakpoints are used: min 768px which covers iPad + desktop layout and then wider screens at min 1200px.
+- 3 x CSS min breakpoints are used: min 580px for small devices, min 768px which covers iPad + desktop layout and then wider screens at min 1200px.
 
 ###WooCommerce
 - All WooCommmerce functionality including CSS is only activated if WooCommerce plugin is installed and activated.
@@ -102,13 +102,15 @@ All scripts are in */includes/scripts-styles.php*
 - WooCommerce CSS is at */css/woo.css* it is set to load after default WooCommerce CSS
 - Once WooCommerce is active there are a number of additional Customizer options for control of color in WooCommerce elements, this will be visible in the last panel of the Customizer
 
+###BeaverBuilder
+- All BeaverBuilder CSS is only activated if BeaverBuilder plugin is installed and activated.
 
 ###Miscellaneous
 - PHP is enabled to execute in widget areas
 - Shortcode enabled in widget areas
 - 'Read More' link is enabled on post excerpts
 - HTML Tags and Attributes is removed from comments
-- The font 'Open Sans' is _not_ enqueued from Google Fonts in *includes/scripts-styles.php*
+- Commented enqueued style from Google Fonts in *includes/scripts-styles.php*
 - System font stack is the default font in style.css
 - Author name removed in Post Meta for posts
 - Meta has default icon styling with Dashicons
@@ -126,7 +128,8 @@ At the top of functions.php there a number of include files that you can comment
 - *scripts-styles.php* contains all JS and CSS files for inclusion
 - *theme-defaults.php* contains all the theme defaults
 - *widgets.php* contains all the widgets that need to be registered
-- *woocommerce.php* contains all the woocommerce functionality, commented out snippets included
+- *beaverbuilder.php* contains all the BeaverBuilder functionality - only enabled if BeaverBuilder plugin is active
+- *woocommerce.php* contains all the woocommerce functionality, commented out snippets included - only enabled if WooCommerce plugin is active
 - *class-featured-custom-post-type-widget.php* widget for the Genesis Featured Custom posts
 
 ###Theme Defaults
