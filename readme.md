@@ -1,4 +1,4 @@
-#GenesisChild Mobile First
+# GenesisChild Mobile First
 
 This theme is a **Mobile First** version of GenesisChild - https://github.com/neilgee/genesischild
 
