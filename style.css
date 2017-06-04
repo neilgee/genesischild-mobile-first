@@ -1124,7 +1124,7 @@ img.alignright,
 .genesis-nav-menu a,
 .genesis-nav-menu > .first > a,
 .genesis-nav-menu > .last > a {
-	padding: 10px;
+	padding: 12px;
 	color: #333;
 	display: block;
 }
@@ -1197,8 +1197,8 @@ img.alignright,
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #333;
 }
 
 
@@ -2011,9 +2011,18 @@ Business Profile
 		float: none;
 	}
 
+	.genesis-nav-menu .menu-item a {
+		margin-bottom: 1px;
+		padding: 15px 20px;
+	}
 
-	.genesis-nav-menu a {
-		padding: 12px;
+
+	.genesis-nav-menu .sub-menu a {
+		padding: 15px;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu {
+		margin: -48px 0 0 199px;
 	}
 
 
@@ -2098,6 +2107,14 @@ Business Profile
 
 	.genesis-nav-menu a {
 		padding: 30px 24px;
+	}
+
+	.genesis-nav-menu .sub-menu a {
+		padding: 20px;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu {
+		margin: -57px 0 0 199px;
 	}
 }
 
