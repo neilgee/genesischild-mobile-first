@@ -58,11 +58,6 @@
 	z-index: 1000;
 }
 
-.menu-toggle,
-.menu-toggle:focus,
-.menu-toggle:hover {
-	border-top: 1px solid #eee;
-}
 
 .menu-toggle::before {
 	font-size: 1.5em;
@@ -236,6 +231,10 @@
         	padding-right: 0;
         }
 
+        .genesis-responsive-menu .genesis-nav-menu li:last-child > a {
+                padding-right: 0;
+        }
+
         .genesis-responsive-menu .genesis-nav-menu > .right {
         	float: right;
         }
@@ -291,9 +290,7 @@
                 padding: 30px 24px;
         }
 
-        .genesis-responsive-menu .genesis-nav-menu li:last-child > a {
-                padding-right: 0;
-        }
+
 
         .genesis-responsive-menu .genesis-nav-menu .sub-menu a {
                 padding: 20px;
