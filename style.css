@@ -593,7 +593,9 @@ th:first-child {
 
 /* ## Site Containers
 --------------------------------------------- */
-/* Sticky Footer */
+/* Sticky Footer
+ * https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
+ */
 
 .site-container {
 	display: -ms-flexbox;
@@ -605,7 +607,7 @@ th:first-child {
 	-webkit-box-orient:vertical;
 	-webkit-box-direction:normal;
 	flex-direction:column;
-	height:100vh;
+	min-height:100vh;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
