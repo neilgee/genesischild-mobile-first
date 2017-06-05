@@ -10,7 +10,7 @@
  * @link    http://wpbeaches.com
  */
 
-add_action( 'wp_enqueue_scripts', 'gc_responsive_menu', 90);
+add_action( 'wp_enqueue_scripts', 'gc_responsive_menu' );
  /**
   * Responsive Menu Scripts and Styles Enqueued
   */

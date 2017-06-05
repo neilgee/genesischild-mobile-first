@@ -176,7 +176,7 @@
         .genesis-responsive-menu .genesis-nav-menu a {
         	color: #333;
         	display: block;
-        	padding: 32px 20px;
+        	padding: 15px 20px;
         	text-decoration: none;
         }
 
@@ -289,6 +289,10 @@
 
         .genesis-responsive-menu .genesis-nav-menu .menu-item a {
                 padding: 30px 24px;
+        }
+
+        .genesis-responsive-menu .genesis-nav-menu li:last-child > a {
+                padding-right: 0;
         }
 
         .genesis-responsive-menu .genesis-nav-menu .sub-menu a {
