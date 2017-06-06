@@ -43,7 +43,7 @@ function gc_theme_setup() {
 	// WooCommerce
 	if ( class_exists( 'WooCommerce' ) ) {
 	// WooCommerce functions
-		include_once( get_stylesheet_directory() . '/includes/woocommerce.php' );
+		include_once( get_stylesheet_directory() . '/includes/woocommerce/woocommerce.php' );
 	}
 
 	// BeaverBuilder
@@ -53,7 +53,7 @@ function gc_theme_setup() {
 	}
 
 	// Genesis Default Responsive Menu
-	include_once( get_stylesheet_directory() . '/includes/responsive-menu.php' );
+	//include_once( get_stylesheet_directory() . '/includes/responsive-menu.php' );
 	// Get the plugins.
 	//require_once  get_stylesheet_directory() . '/plugins.php';
 
