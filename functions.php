@@ -108,7 +108,7 @@ function gc_theme_setup() {
 			 'attr'    => array ( 'class' => 'aligncenter' ), // set a default WP image class
 		 ) );
 		 // For other sizes - size => array(300, 450, true),
-		 if ( is_singular() && ( true === $add_single_image ) ) {
+		 if ( is_single() && ( true === $add_single_image ) ) {
 		 if ( $image ) {
 		 	printf( '<div class="featured-image-class">%s</div>', $image ); // wraps the featured image in a div with css class you can control
 			 }
