@@ -1313,8 +1313,13 @@ img.alignright,
 	margin-bottom: 40px;
 }
 
+.home .content .entry {
+	padding: 0;
+}
+
 .content .entry {
 	background-color: #fff;
+	padding: 20px;
 }
 
 .entry-content {
@@ -1438,6 +1443,7 @@ p.entry-meta {
 	-webkit-box-pack: start;
 	justify-content: flex-start;
 	margin: 40px 0;
+	width: 100%;
 }
 
 .adjacent-entry-pagination {
@@ -1637,6 +1643,14 @@ Business Profile
 	display: none;
 }
 
+.sidebar .bp-times {
+    width: 55%;
+}
+
+.sidebar .bp-weekday-name {
+    width: 35%;
+}
+
 .bp-contact-card .bp-name {
 	margin-bottom: 0;
 }
@@ -1647,6 +1661,16 @@ Business Profile
 
 .bp-contact-card .bp-opening-hours {
 	margin: 0 auto;
+}
+
+.bp-map {
+	max-height: 210px;
+	max-width: 320px;
+}
+.footer-widgets  .bp-map {
+    height: 200px;
+    max-width: 340px;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1668,6 +1692,9 @@ Business Profile
 	.footer-widgets .bp-times {
 		width: 58%;
 		font-size: 18px;
+	}
+	.footer-widgets  .bp-map {
+	    margin: 0;
 	}
 
 	.footer-widgets .bp-weekday-name {
