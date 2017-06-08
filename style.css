@@ -1161,10 +1161,6 @@ img.alignright,
 /* ## Site Header Navigation
 --------------------------------------------- */
 
-.site-header .sub-menu {
-	border-top: 1px solid #eee;
-}
-
 .site-header .sub-menu .sub-menu {
 	margin-top: -56px;
 }
