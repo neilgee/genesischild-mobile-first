@@ -94,6 +94,27 @@ function gc_theme_setup() {
 	//
 	add_image_size( 'blog-feature', 300, 200, true );
 
+
+	add_action( 'genesis_entry_content', 'gc_featured_image', 1 );
+	/**
+	 * Add featured image on single post.
+	 **/
+	function gc_featured_image() {
+		 $add_single_image = get_theme_mod( 'gc_single_image_setting', true ); //sets the customizer setting to a variable
+		 $image = genesis_get_image( array( // more options here -> genesis/lib/functions/image.php
+			 'format'  => 'html',
+			 'size'    => 'large',// add in your image size large, medium or thumbnail - for custom see the post
+			 'context' => '',
+			 'attr'    => array ( 'class' => 'aligncenter' ), // set a default WP image class
+		 ) );
+		 // For other sizes - size => array(300, 450, true),
+		 if ( is_singular() && ( true === $add_single_image ) ) {
+		 if ( $image ) {
+		 	printf( '<div class="featured-image-class">%s</div>', $image ); // wraps the featured image in a div with css class you can control
+			 }
+		 }
+ 	}
+
 	// Re-arrange header nav.
 	remove_action( 'genesis_after_header','genesis_do_nav' );
 	add_action( 'genesis_header_right','genesis_do_nav' );
@@ -115,6 +136,15 @@ function gc_theme_setup() {
 		$output = sprintf( '<p>%s &#x02026;</p><p class="more-link-wrap">%s</p>', $content, str_replace( '&#x02026;', '', $link ) );
 
 		return $output;
+	}
+
+	add_filter( 'get_the_content_more_link', 'gc_filter_read_more_link' );
+	/**
+	 * Modify the WordPress read more link when entry content is showing
+	 **/
+	function gc_filter_read_more_link() {
+
+		return sprintf( '<a href="%1$s" class="%2$s" title="Read More">%3$s</a>', get_permalink(), 'more-link', __( ' Read More' ) );
 	}
 
 	add_filter( 'comment_form_defaults', 'gc_comment_form_defaults' );
