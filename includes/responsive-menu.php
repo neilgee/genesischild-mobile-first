@@ -31,7 +31,7 @@ add_action( 'wp_enqueue_scripts', 'gc_responsive_menu' );
   		'mainMenu'          => __( 'Menu', 'genesischild' ),
   		'menuIconClass'     => 'dashicons-before dashicons-menu',
   		'subMenu'           => __( 'Submenu', 'genesischild' ),
-  		'subMenuIconsClass' => 'dashicons-before dashicons-arrow-down-alt2',
+  		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
   		'menuClasses'       => array(
   			'combine' => array(
   				'.nav-primary',
