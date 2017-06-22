@@ -1673,24 +1673,20 @@ Business Profile
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
+.footer-widgets .bp-times {
+    width: 58%;
+    font-size: 14px;
+}
 
-	.footer-widgets .bp-times {
-	    width: 58%;
-	    font-size: 14px;
-	}
-
-	.footer-widgets .bp-weekday-name {
-	    width: 42%;
-	    font-size: 14px;
-	}
+.footer-widgets .bp-weekday-name {
+    width: 42%;
+    font-size: 14px;
 }
 
 
 @media only screen and (min-width: 1024px) {
 
 	.footer-widgets .bp-times {
-		width: 58%;
 		font-size: 18px;
 	}
 	.footer-widgets  .bp-map {
@@ -1698,7 +1694,6 @@ Business Profile
 	}
 
 	.footer-widgets .bp-weekday-name {
-		width: 42%;
 		font-size: 18px;
 	}
 }

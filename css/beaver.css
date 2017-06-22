@@ -29,6 +29,17 @@ Beaver Builder Full Width
 	margin-bottom: 0;
 }
 
+.flbuilder .entry-content {
+	margin-bottom: 0;
+}
+
+.fl-builder .content .entry,
+.fl-builder .entry  {
+	padding: 20px 0;
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
 

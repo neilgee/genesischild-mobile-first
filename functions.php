@@ -86,7 +86,7 @@ function gc_theme_setup() {
 		'flex-width'  => true,
 	));
 	// Add Accessibility support.
-	add_theme_support( 'genesis-accessibility', array( '404-page', 'headings', 'drop-down-menu', 'search-form', 'skip-links' ) );
+	add_theme_support( 'genesis-accessibility', array( '404-page', 'headings', /*'drop-down-menu',*/ 'search-form', 'skip-links' ) );
 	// Add structural wraps.
 	add_theme_support( 'genesis-structural-wraps', array( 'site-inner', 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );
 

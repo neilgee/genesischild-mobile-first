@@ -25,7 +25,8 @@
 	clear:both;
 }
 
-.woocommerce ul li {
+.woocommerce ul li,
+.woocommerce .wc_payment_method  {
 	list-style-type: none;
 }
 
