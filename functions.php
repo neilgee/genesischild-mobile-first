@@ -198,6 +198,28 @@ function gc_theme_setup() {
 
 	// Remove blog header from blog posts page.
 	remove_action( 'genesis_before_loop', 'genesis_do_posts_page_heading' );
+	//add_action( 'genesis_before_content', 'genesis_do_posts_page_heading' );
+
+	// Moves Title and Description on CPT Archive
+	remove_action( 'genesis_before_loop', 'genesis_do_cpt_archive_title_description' );
+	add_action( 'genesis_before_content', 'genesis_do_cpt_archive_title_description' );
+
+	// Moves Title and Description on Date Archive
+	remove_action( 'genesis_before_loop', 'genesis_do_date_archive_title' );
+	add_action( 'genesis_before_content', 'genesis_do_cpt_archive_title_description' );
+
+	// Moves Title and Description on Archive, Taxonomy, Category, Tag
+	remove_action( 'genesis_before_loop', 'genesis_do_taxonomy_title_description', 15 );
+	add_action( 'genesis_before_content', 'genesis_do_taxonomy_title_description', 15 );
+
+	// Moves Title and Description on Author Archive
+	remove_action( 'genesis_before_loop', 'genesis_do_author_title_description', 15 );
+	add_action( 'genesis_before_content', 'genesis_do_author_title_description', 15 );
+
+	// Moves Title and Description on Blog Template Page
+	remove_action( 'genesis_before_loop', 'genesis_do_blog_template_heading' );
+	add_action( 'genesis_before_content', 'genesis_do_blog_template_heading' );
+
 
 
 	add_filter( 'upload_mimes', 'gc_add_svg_images' );
