@@ -1,6 +1,6 @@
 <?php
 /**
- * Genesis Sample.
+ * GenesisChild
  *
  * This file adds the Genesis Connect for WooCommerce notice to the Genesis Sample Theme.
  *

@@ -17,6 +17,10 @@ Beaver Builder Full Width
 	display: none;
 }
 
+.home .content .entry {
+	padding: 0;
+}
+
 .fl-builder .fl-widget .entry-header {
 	display: block;
 }

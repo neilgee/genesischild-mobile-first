@@ -20,7 +20,7 @@ function gc_theme_setup() {
 	// Child theme constant settings.
 	 define( 'CHILD_THEME_NAME', 'genesischild' );
 	 define( 'CHILD_THEME_URL', 'http://wpbeaches.com' );
-	 define( 'CHILD_THEME_VERSION', '2.4.0' );
+	 define( 'CHILD_THEME_VERSION', '2.5.0' );
 
 	 /** Allow SVG */
 	 define( 'ALLOW_UNFILTERED_UPLOADS', true );
@@ -54,6 +54,7 @@ function gc_theme_setup() {
 
 	// Genesis Default Responsive Menu
 	//include_once( get_stylesheet_directory() . '/includes/responsive-menu.php' );
+
 	// Get the plugins.
 	//require_once  get_stylesheet_directory() . '/plugins.php';
 
@@ -64,12 +65,14 @@ function gc_theme_setup() {
 
 	// HTML5 goodness.
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
 	// RWD viewport.
 	add_theme_support( 'genesis-responsive-viewport' );
+
 	// Allow for a custom background.
 	add_theme_support( 'custom-background' );
-	// Add support for custom header change the dimensions to suit.
 
+	// Add support for custom header change the dimensions to suit.
 	//  add_theme_support( 'custom-header', array(
 	// 	'flex-width'  => true,
 	// 	'flex-height' => true,
@@ -85,14 +88,16 @@ function gc_theme_setup() {
 		'flex-height' => true,
 		'flex-width'  => true,
 	));
+
 	// Add Accessibility support.
 	add_theme_support( 'genesis-accessibility', array( '404-page', 'headings', /*'drop-down-menu',*/ 'search-form', 'skip-links' ) );
+
 	// Add structural wraps.
 	add_theme_support( 'genesis-structural-wraps', array( 'site-inner', 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );
 
 	// Image sizes - add in required image sizes here.
-	//
 	add_image_size( 'blog-feature', 300, 200, true );
+	add_image_size( 'medium', 300, 300, true );
 
 
 	add_action( 'genesis_entry_content', 'gc_featured_image', 1 );
