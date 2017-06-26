@@ -386,7 +386,7 @@ textarea {
 	font-size: 18px;
 	font-size:1.8rem;
 	font-weight: 300;
-	padding: 16px;
+	padding: 10px;
 	width: 100%;
 }
 
@@ -1616,10 +1616,10 @@ li.comment {
 
 .site-footer {
 	background-color: #fff;
-	font-size: 14px;
-	font-size:1.4rem;
+	font-size: 13px;
+	font-size:1.3rem;
 	line-height: 1;
-	padding: 15px 0;
+	padding: 5px 0;
 	text-align: center;
 }
 
