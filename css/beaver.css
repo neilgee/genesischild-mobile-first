@@ -17,7 +17,7 @@ Beaver Builder Full Width
 	display: none;
 }
 
-.home .content .entry {
+.home .wrap .content .entry {
 	padding: 0;
 }
 
@@ -33,7 +33,7 @@ Beaver Builder Full Width
 	margin-bottom: 0;
 }
 
-.flbuilder .entry-content {
+.fl-builder .entry-content {
 	margin-bottom: 0;
 }
 
