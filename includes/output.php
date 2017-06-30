@@ -108,14 +108,22 @@ function gc_css() {
 		.archive-pagination .active a {
 			color: %s;
 		}
-		', $gc_link_hover_color ) : '';
+	', $gc_link_hover_color ) : '';
 
 	$css .= ( gc_menu_color_default() !== $gc_menu_color  ) ? sprintf( '
 		.genesis-nav-menu a,
-		.nav-primary .genesis-nav-menu .sub-menu a {
+		.nav-primary .genesis-nav-menu .sub-menu a,
+		.menu-toggle,
+		.sub-menu-toggle {
 			color: %s;
 		}
-		', $gc_menu_color ) : '';
+
+		@media only screen and (min-width: 767px) {
+			.genesis-responsive-menu .genesis-nav-menu a {
+			    color: %s;
+			}
+		}
+	', $gc_menu_color, $gc_menu_color ) : '';
 
 	$css .= ( gc_menu_hover_color_default() !== $gc_menu_hover_color ) ? sprintf( '
 		.genesis-nav-menu a:hover,
@@ -126,11 +134,23 @@ function gc_css() {
 		.nav-primary .genesis-nav-menu .sub-menu a:hover,
 		.nav-primary .genesis-nav-menu .sub-menu a:focus,
 		.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a,
-		.js nav button:focus,
-		.js .menu-toggle:focus  {
+		.menu-toggle:focus,
+		.menu-toggle:hover,
+		.sub-menu-toggle:focus,
+		.sub-menu-toggle:hover {
 			color: %s;
 		}
-		', $gc_menu_hover_color ) : '';
+
+		@media only screen and (min-width: 767px) {
+			.genesis-responsive-menu .genesis-nav-menu a:focus,
+			.genesis-responsive-menu .genesis-nav-menu a:hover,
+			.genesis-responsive-menu .genesis-nav-menu .current-menu-item > a,
+			.genesis-responsive-menu .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
+			.genesis-responsive-menu .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+			    color: %s;
+			}
+		}
+	', $gc_menu_hover_color, $gc_menu_hover_color ) : '';
 
 	$css .= ( gc_button_color_default() !== $gc_button_color ) ? sprintf( '
 		button,

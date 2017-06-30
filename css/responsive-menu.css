@@ -201,6 +201,7 @@
         	transition:         opacity .4s ease-in-out;
         	width: 200px;
         	z-index: 99;
+		display: block;
         }
 
         .genesis-responsive-menu .genesis-nav-menu .sub-menu a {
