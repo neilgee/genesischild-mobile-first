@@ -78,12 +78,12 @@ function gc_remove_order_notes( $fields ) {
 // ref - https://docs.woothemes.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/
 function gc_custom_billing_fields( $fields = array() ) {
         unset($fields['billing_company']);
-        unset($fields['billing_address_1']);
-        unset($fields['billing_address_2']);
-        unset($fields['billing_state']);
-        unset($fields['billing_city']);
-        unset($fields['billing_phone']);
-        unset($fields['billing_postcode']);
-        unset($fields['billing_country']);
+        // unset($fields['billing_address_1']);
+        // unset($fields['billing_address_2']);
+        // unset($fields['billing_state']);
+        // unset($fields['billing_city']);
+        // unset($fields['billing_phone']);
+        // unset($fields['billing_postcode']);
+        // unset($fields['billing_country']);
         return $fields;
 }

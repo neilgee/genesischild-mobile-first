@@ -618,6 +618,10 @@ th:first-child {
 	} /* Fix for IE10 & IE11 */
 }
 
+.home .site-inner {
+	padding-top: 0;
+}
+
 .site-inner {
 	-ms-flex:1;
 	-webkit-flex:1;
