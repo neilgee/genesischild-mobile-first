@@ -87,3 +87,18 @@ function gc_custom_billing_fields( $fields = array() ) {
         // unset($fields['billing_country']);
         return $fields;
 }
+
+//add_filter('woocommerce_shipping_fields','gc_custom_shipping_fields');
+// Remove some fields from billing form
+// ref - https://docs.woothemes.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/
+function gc_custom_shipping_fields( $fields = array() ) {
+        unset($fields['shipping_company']);
+        // unset($fields['shipping_address_1']);
+        // unset($fields['shipping_address_2']);
+        // unset($fields['shipping_state']);
+        // unset($fields['shipping_city']);
+        // unset($fields['shipping_phone']);
+        // unset($fields['shipping_postcode']);
+        // unset($fields['shipping_country']);
+        return $fields;
+}
