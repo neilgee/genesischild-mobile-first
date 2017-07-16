@@ -18,12 +18,22 @@ add_action( 'genesis_setup', 'gc_theme_setup', 15 );
  */
 function gc_theme_setup() {
 	// Child theme constant settings.
-	 define( 'CHILD_THEME_NAME', 'genesischild' );
-	 define( 'CHILD_THEME_URL', 'http://wpbeaches.com' );
-	 define( 'CHILD_THEME_VERSION', '2.5.0' );
+	define( 'CHILD_THEME_NAME', 'genesischild' );
+	define( 'CHILD_THEME_URL', 'http://wpbeaches.com' );
+	define( 'CHILD_THEME_VERSION', '3.0.0' );
 
-	 /** Allow SVG */
-	 define( 'ALLOW_UNFILTERED_UPLOADS', true );
+	// Allow SVG Upload
+	define( 'ALLOW_UNFILTERED_UPLOADS', true );
+
+	// Clean up WP Heading
+	remove_action( 'wp_head', 'wp_generator' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10 );
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 
 	// Load in optional files.
 
@@ -39,6 +49,8 @@ function gc_theme_setup() {
 	require_once( get_stylesheet_directory() . '/includes/customize.php' );
 	// Add in our CSS for our customizer options.
 	require_once( get_stylesheet_directory() . '/includes/output.php' );
+	// Client Logo on WP Login.
+	//include_once( get_stylesheet_directory() . '/includes/client-file.php' );
 
 	// WooCommerce
 	if ( class_exists( 'WooCommerce' ) ) {

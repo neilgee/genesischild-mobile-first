@@ -5,7 +5,6 @@
 include_once( get_stylesheet_directory() . '/includes/woocommerce/woocommerce-notice.php' );
 
 
-
 add_action( 'wp_enqueue_scripts', 'woo_css_styles', 900 );
 /**
  * WOO CSS styles.
@@ -101,4 +100,14 @@ function gc_custom_shipping_fields( $fields = array() ) {
         // unset($fields['shipping_postcode']);
         // unset($fields['shipping_country']);
         return $fields;
+}
+
+
+//add_filter( 'woocommerce_thankyou_order_received_text', 'gc_thank_you' );
+/**
+ * Filter thank you text for digital downloads or the first page after payment
+ */
+function gc_thank_you() {
+	$added_text = '<p>Thank you your order has been received. Your download link is below. You will also receive an email with your PDF download link.</p>';
+	return $added_text ;
 }

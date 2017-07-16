@@ -5,6 +5,16 @@
  * @package genesischild
  */
 
+add_action('wp_enqueue_scripts', 'gc_jquery_enqueue');
+// Add later jQuery
+ function gc_jquery_enqueue() {
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', ( 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' ),  array(), '2.2.4', true );
+	wp_enqueue_script( 'jquery' );
+}
+
+
+
 // Remove the default Genesis main stylesheet to we can load it later.
 remove_action( 'genesis_meta', 'genesis_load_stylesheet' );// Remove order of main style sheet.
 // Load Genesis main style sheet later so we beat out all the other guys.
