@@ -110,10 +110,11 @@ function gc_theme_setup() {
 	// Image sizes - add in required image sizes here.
 	if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'blog-feature', 300, 200, true );
-	add_image_size( 'medium', 300, 300, true );
+	add_image_size( 'medium', 300, 300, true ); // Overwrite default and hard cropping
 	}
 
 	add_filter( 'image_size_names_choose', 'gc_custom_image_sizes' );
+	// Helps Beaver Builder see custom sizes.
 	function gc_custom_image_sizes( $sizes ) {
 		global $_wp_additional_image_sizes;
 		if ( empty($_wp_additional_image_sizes) )
@@ -123,14 +124,13 @@ function gc_theme_setup() {
 			if ( !isset($sizes[$id]) )
 				$sizes[$id] = ucfirst( str_replace( '-', ' ', $id ) );
 		}
-
 		return $sizes;
 	}
 
 	add_filter( 'intermediate_image_sizes_advanced', 'gc_remove_default_images' );
-	// Remove default image sizes here
+	// Remove default image sizes here. Bailing large out.
 	function gc_remove_default_images( $sizes ) {
-		unset( $sizes['large']);
+		unset( $sizes['large']); // also medium and thumbnail if you like
 		return $sizes;
 	}
 
