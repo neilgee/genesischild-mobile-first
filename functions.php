@@ -25,7 +25,7 @@ function gc_theme_setup() {
 	// Allow SVG Upload
 	define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
-	// Clean up WP Heading
+	// Clean up WP Head
 	remove_action( 'wp_head', 'wp_generator' );
 	remove_action( 'wp_head', 'wlwmanifest_link' );
 	remove_action( 'wp_head', 'rsd_link' );
@@ -49,7 +49,7 @@ function gc_theme_setup() {
 	require_once( get_stylesheet_directory() . '/includes/customize.php' );
 	// Add in our CSS for our customizer options.
 	require_once( get_stylesheet_directory() . '/includes/output.php' );
-	// Client Logo on WP Login.
+	// Client Logo for WP Login and backend admin clean up.
 	//include_once( get_stylesheet_directory() . '/includes/client-file.php' );
 
 	// WooCommerce
@@ -108,9 +108,31 @@ function gc_theme_setup() {
 	add_theme_support( 'genesis-structural-wraps', array( 'site-inner', 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );
 
 	// Image sizes - add in required image sizes here.
+	if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'blog-feature', 300, 200, true );
 	add_image_size( 'medium', 300, 300, true );
+	}
 
+	add_filter( 'image_size_names_choose', 'gc_custom_image_sizes' );
+	function gc_custom_image_sizes( $sizes ) {
+		global $_wp_additional_image_sizes;
+		if ( empty($_wp_additional_image_sizes) )
+			return $sizes;
+
+		foreach ( $_wp_additional_image_sizes as $id => $data ) {
+			if ( !isset($sizes[$id]) )
+				$sizes[$id] = ucfirst( str_replace( '-', ' ', $id ) );
+		}
+
+		return $sizes;
+	}
+
+	add_filter( 'intermediate_image_sizes_advanced', 'gc_remove_default_images' );
+	// Remove default image sizes here
+	function gc_remove_default_images( $sizes ) {
+		unset( $sizes['large']);
+		return $sizes;
+	}
 
 	add_action( 'genesis_entry_content', 'gc_featured_image', 1 );
 	/**
