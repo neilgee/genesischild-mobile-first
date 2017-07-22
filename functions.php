@@ -113,24 +113,12 @@ function gc_theme_setup() {
 	add_image_size( 'medium', 300, 300, true ); // Overwrite default and hard cropping
 	}
 
-	add_filter( 'image_size_names_choose', 'gc_custom_image_sizes' );
-	// Helps Beaver Builder see custom sizes.
-	function gc_custom_image_sizes( $sizes ) {
-		global $_wp_additional_image_sizes;
-		if ( empty($_wp_additional_image_sizes) )
-			return $sizes;
-
-		foreach ( $_wp_additional_image_sizes as $id => $data ) {
-			if ( !isset($sizes[$id]) )
-				$sizes[$id] = ucfirst( str_replace( '-', ' ', $id ) );
-		}
-		return $sizes;
-	}
 
 	add_filter( 'intermediate_image_sizes_advanced', 'gc_remove_default_images' );
 	// Remove default image sizes here. Bailing large out.
 	function gc_remove_default_images( $sizes ) {
 		unset( $sizes['large']); // also medium and thumbnail if you like
+		unset( $sizes['medium_large']); // 768px
 		return $sizes;
 	}
 
@@ -142,7 +130,7 @@ function gc_theme_setup() {
 		 $add_single_image = get_theme_mod( 'gc_single_image_setting', true ); //sets the customizer setting to a variable
 		 $image = genesis_get_image( array( // more options here -> genesis/lib/functions/image.php
 			 'format'  => 'html',
-			 'size'    => 'large',// add in your image size large, medium or thumbnail - for custom see the post
+			 'size'    => 'medium',// add in your image size large, medium or thumbnail - for custom see the post
 			 'context' => '',
 			 'attr'    => array ( 'class' => 'aligncenter' ), // set a default WP image class
 		 ) );
