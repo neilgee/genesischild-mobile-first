@@ -64,6 +64,12 @@ function gc_theme_setup() {
 		include_once( get_stylesheet_directory() . '/includes/beaverbuilder.php' );
 	}
 
+	// GravityForms
+	if ( class_exists( 'GFCommon' ) ) {
+		include_once( get_stylesheet_directory() . '/includes/gravity.php' );
+	}
+
+
 	// Genesis Default Responsive Menu
 	//include_once( get_stylesheet_directory() . '/includes/responsive-menu.php' );
 
@@ -331,6 +337,8 @@ function gc_theme_setup() {
 		}
 		return $html;
 	}
+
+
 
 } // <~Closing brace for genesis_setup function
 
