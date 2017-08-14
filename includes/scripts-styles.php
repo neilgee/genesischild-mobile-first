@@ -5,7 +5,7 @@
  * @package genesischild
  */
 
-add_action('wp_enqueue_scripts', 'gc_jquery_enqueue');
+//add_action('wp_enqueue_scripts', 'gc_jquery_enqueue');
 // Add later jQuery
  function gc_jquery_enqueue() {
 	wp_deregister_script( 'jquery' );
