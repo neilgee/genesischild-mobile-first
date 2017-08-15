@@ -1323,6 +1323,13 @@ img.alignright,
 	padding: 20px;
 }
 
+@media(min-width:768px) {
+	.content .entry {
+		background-color: #fff;
+		padding: 40px;
+	}
+}
+
 .entry-content {
 	margin-bottom: 10px;
 }
@@ -1855,7 +1862,7 @@ Business Profile
 	}
 
 	.site-header .wrap {
-		padding: 20px 1%;
+		padding: 20px;
 		display: -ms-flex;
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -1922,7 +1929,7 @@ Business Profile
 		-webkit-justify-content: space-between;
 		-webkit-box-pack: justify;
 		justify-content: space-between;
-		max-width: 960px;
+		max-width: 1120px;
 		margin: 0 auto;
 		padding-left: 1%;
 		padding-right:1%;
